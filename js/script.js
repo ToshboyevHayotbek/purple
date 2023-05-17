@@ -1,8 +1,5 @@
 window.addEventListener('DOMContentLoaded', () =>{
-
-})
-
-const loader = document.querySelector('.loader');
+  const loader = document.querySelector('.loader');
 
 setTimeout(() => {
   loader.style.opacity = 0.5;
@@ -42,7 +39,7 @@ const titleContent = document.querySelector('.title__content'),
       function hideBlogContainer (){
         blogContainer.forEach(item  =>{
           item.classList.add('hide');
-          item.classList.remove('show', '.grid');
+          item.classList.remove('show');
         });
         blogItem.forEach(item =>{
           item.classList.remove('blogItemActive');
@@ -50,7 +47,7 @@ const titleContent = document.querySelector('.title__content'),
       }
 
       function showBlogContainer (i = 0){
-        blogContainer[i].classList.add('show', '.grid');
+        blogContainer[i].classList.add('show');
         blogContainer[i].classList.remove('hide');
         blogItem[i].classList.add('blogItemActive');
       }
@@ -58,3 +55,11 @@ const titleContent = document.querySelector('.title__content'),
       hideBlogContainer();
       showBlogContainer();
 
+      titleContent.addEventListener('click', () =>{
+        const target = e.target;
+        if(target && e.target.classList.contains('blog__item')){
+          
+        }
+      });
+
+});

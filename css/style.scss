@@ -58,6 +58,11 @@
                         color: white;
                     }
                 }
+                i{
+                    font-size: 2rem;
+                    color: #4232C2;
+                    display: none;
+                }
             }
             .social{
                 i{
@@ -498,6 +503,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
 }
+
 // loader
     .loader{
         width: 100%;

@@ -58,6 +58,11 @@
   border-radius: 20px;
   color: white;
 }
+.header .navigation .nav__bar .nav i {
+  font-size: 2rem;
+  color: #4232C2;
+  display: none;
+}
 .header .navigation .nav__bar .social i {
   font-size: 1.5rem;
   margin-left: 15px;
