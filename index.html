@@ -8,7 +8,7 @@
     <!-- style -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- responsive -->
-    <link rel="stylesheet" href="/css/resonsive.css">
+    <link rel="stylesheet" href="/css/responsive.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <!-- swiper -->
@@ -16,7 +16,9 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
 />
-<!-- loader -->
+</head>
+<body>
+    <!-- loader -->
     <div class="loader">
         <div id="wifi-loader">
             <svg class="circle-outer" viewBox="0 0 86 86">
@@ -35,10 +37,8 @@
             <div class="text" data-text="Searching"></div>
         </div>
     </div>
-</head>
-<body>
     <!-- header -->
-    <header class="header">
+    <header class="header" id="home">
         <div class="navigation">
             <div class="container">
                 <div class="nav__bar">
@@ -51,12 +51,14 @@
                         <a href="#work">Work</a>
                         <a href="#pricing">Pricing</a>
                         <a href="#contact">Contact</a>
-                        <i class="fa-solid fa-bars"></i>
                     </div>
                     <div class="social">
                         <i class="fa-solid fa-bell"></i>
                         <i class="fa-solid fa-gear"></i>
                         <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="bars">
+                        <i class="fa-solid fa-bars"></i>
                     </div>
                 </div>
             </div>
@@ -114,8 +116,8 @@
     <div class="design__services">
         <div class="design__title">
             <div class="title__content">
-                <div class="blog__item__active">All</div>
-                <div class="blog__item">Branding</div>
+                <div class="blog__item active">All</div>
+                <div class="blog__item">Graphics</div>
                 <div class="blog__item">UI/UX</div>
                 <div class="blog__item">Branding</div>
             </div>
@@ -522,14 +524,25 @@
                 <div class="footer__item__for">
                     <h2>For Client</h2>
                     <div class="tel"><i class="fa-solid fa-phone"></i><a href="">+998 90-535-19-01</a></div>
-                    <div class="gmail"><i class="fa-regular fa-envelope"></i><a href="">hayotbektoshbo@gmail.com</a></div>
+                    <div class="gmail"><i class="fa-regular fa-envelope"></i><a href="">hayotbek@gmail.com</a></div>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- copyright -->
-    <div class="copyright"></div>
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright__content">
+                <div class="copyright__item">
+                    <p>© Copyright 2021 Purple Buzz Company. All Rights Reserved.</p>
+                </div>
+                <div class="copyright__temp">
+                    <p>Designed by <a href="#home">TemplateMo</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

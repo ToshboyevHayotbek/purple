@@ -72,6 +72,9 @@
                     color: #4252CE;
                 }
             }
+            .bars{
+                display: none;
+            }
         }
     }
     .banner{
@@ -167,8 +170,8 @@
     }
 }
 // design
-.design__services{
-    width: 100%;
+ .design__services{
+   width: 100%;
     .design__title{
         width: 100%;
         padding: 2rem 0;
@@ -177,25 +180,27 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            gap: 7rem;
+            gap: 3rem;
             align-items: center;
+            margin: 0 auto;
+            text-align: center;
             .blog__item{
                     text-decoration: none;
                     color: white;
                     font-family: Ubuntu;
-                    padding: 1rem 1.8rem;
+                    padding: 1rem 2rem;
                     &:hover{
                         transition: 0.5s;
                         background-color: #4232C2;
                         border-radius: 40px;
                 }
             }
-        }
-        .blog__item__active{
-            color: white;
-            background-color: #4232C2;
-            border-radius: 20px;
-            padding: 1rem 1.8rem;
+            .active{
+                color: #4232C2;
+                background-color: white;
+                border-radius: 20px;
+                padding: 1rem 0.5rem;
+            }
         }
     }
 }
@@ -203,75 +208,75 @@
 .design__img{
     width: 100%;
     padding: 4.8rem 0;
-    .blog__container{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 3rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        .blog__container__item{
+}
+.blog__container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    .blog__container__item{
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        img{
+            width: 100%;
             border-radius: 20px;
-            overflow: hidden;
-            position: relative;
-            img{
-                width: 100%;
-                border-radius: 20px;
-            }
-            &:hover .blog__shadow{
-                transform: translateY(30vh);
-            }
-            &:hover .blog__shadow__black{
-                transform: translateY(100vh);
-            }
-            &:hover .title{
+        }
+        &:hover .blog__shadow{
+            transform: translateY(30vh);
+        }
+        &:hover .blog__shadow__black{
+            transform: translateY(100vh);
+        }
+        &:hover .title{
+            color: black;
+            button{
                 color: black;
-                button{
-                    color: black;
-                    border: 2px solid black;
-                }
+                border: 2px solid black;
             }
-            .blog__shadow{
-                position: absolute;
+        }
+        .blog__shadow{
+            position: absolute;
+            border-radius: 20px;
+            width: 100%;
+            height: 60px;
+            background-color: rgba(255, 253, 253,1);
+            box-shadow: 0 -10px 10px white, 
+            0 -20px 20px white,
+            0 -30px 30px white,
+            - 40px 40px white;
+            transform: translateY(-400px);
+            transition: all 0.5s linear;
+        }
+        .blog__shadow__black{
+            position: absolute;
+            border-radius: 20px;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            width: 100%;
+            height: 100%;
+            transition: all 0.5s linear;
+        }
+        .title{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            button{
+                background: transparent;
+                border: 2px solid white;
+                padding: 0.7rem 2rem;
                 border-radius: 20px;
-                width: 100%;
-                height: 60px;
-                background-color: rgba(255, 253, 253,1);
-                box-shadow: 0 -10px 10px white, 
-                0 -20px 20px white,
-                0 -30px 30px white,
-                - 40px 40px white;
-                transform: translateY(-400px);
-                transition: all 0.5s linear;
-            }
-            .blog__shadow__black{
-                position: absolute;
-                border-radius: 20px;
-                background-color: rgba($color: #000000, $alpha: 0.5);
-                width: 100%;
-                height: 100%;
-                transition: all 0.5s linear;
-            }
-            .title{
-                position: absolute;
-                bottom: 10px;
-                left: 10px;
                 color: white;
-                button{
-                    background: transparent;
-                    border: 2px solid white;
-                    padding: 0.7rem 2rem;
-                    border-radius: 20px;
-                    color: white;
-                    &:hover{
-                        background-color: #6266EA;
-                        transition: 0.5s;
-                    }
+                &:hover{
+                    background-color: #6266EA;
+                    transition: 0.5s;
                 }
             }
         }
-
     }
+
 }
 
 // succesful
@@ -492,6 +497,34 @@
         }    
     }
 }
+// copyright
+.copyright{
+    width: 100%;
+    background-color: #4232C2;
+    padding: 1rem 0;
+    .copyright__content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .copyright__item{
+            p{
+                color: white;
+                font-family: Ubuntu;
+            }
+        }
+        .copyright__temp{
+            p{
+                color: white;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-family: Roboto Slab;
+                }
+            }
+        }
+    }
+}
+
 .hide{
     display: none;
 }
@@ -503,6 +536,876 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
 }
+.grid__work{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+// about qism
+.about__header{
+    width: 100%;
+    .navigation{
+        width: 100%;
+        padding: 1rem 0;
+        background-color: #fff;
+        box-shadow: 0 15px 10px 0 rgba(0,0,0,0.2);
+        margin-bottom: 1%;
+        .nav__bar{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                a{
+                text-decoration: none;
+                color: black;
+                    .fa-city{
+                        font-size: 2rem;
+                        color: black;
+                    }
+                    span{
+                        font-size: 1.8rem;
+                        font-family: Roboto Slab;
+                        margin-right: 10px;
+                        margin-left: 15px;
+                    }
+                    b{
+                        font-size: 1.8rem;
+                        font-family: Ubuntu;
+                        color: #4252CE;
+                    }
+                }
+            }
+            .nav{
+                a{
+                    text-decoration: none;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                    font-size: 1.2rem;
+                    font-family: Ubuntu;
+                    color: #737373;
+                    &:hover{
+                        padding: 0.5rem 1rem;
+                        background-color: #4232C2;
+                        border-radius: 20px;
+                        color: white;
+                    }
+                }
+                i{
+                    font-size: 2rem;
+                    color: #4232C2;
+                    display: none;
+                }
+            }
+            .social{
+                i{
+                    font-size: 1.5rem;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    color: #4252CE;
+                }
+            }
+            .bars{
+                display: none;
+            }
+        }
+    }
+}
+// about
+.about__header{
+    .about__banner{
+        background-color: #F6F9FE;
+        .about__content{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            align-items: center;
+            .about__item{
+                h2{
+                    font-size: 3rem;
+                    font-family: Ubuntu;
+                    color: #4252CE;
+                    border-bottom: 5px solid #4252CE;
+                    width: 30%;
+                }
+                p{
+                    font-family: Roboto Slab;
+                }
+            }
+        }
+    }
+}
+
+// team
+.about__team{
+    width: 100%;
+    padding: 3.8rem 0;
+    .team__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 25% 75%;
+        gap: 2rem;
+        align-items: center;
+        .team__item{
+            width: 70%;
+            h2{
+                font-size: 3.2rem;
+                font-family: Ubuntu;
+                border-bottom: 5px solid #4252CE;
+            }
+            p{
+                font-family: Roboto Slab;
+            }
+        }
+        .team__item__img{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            align-items: center;
+            .img__item{
+                .team__img{
+                    text-align: center;
+                    img{
+                        border-radius: 100%;
+                        width: 70%;
+                        margin: 0 auto;
+                    }
+                    &:hover{
+                        width: 90%;
+                        transition: 1s;
+                    }
+                }
+                .title__img{
+                    width: 100%;
+                    text-align: center;
+                    h3{
+                        font-family: Ubuntu;
+                        font-size: 1.2rem;
+                        color: #4252CE;
+                    }
+                    p{
+                        font-family: Karla;
+                        color: #737373;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// partner
+.partner{
+    width: 100%;
+    background-color: #6266EA;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+    .partner__title{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 4rem;
+        h2{
+            font-size: 2.4rem;
+            font-family: Ubuntu;
+            color: white;
+        }
+    }
+    .partner__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin: 0 auto;
+        .partner__item{
+            width: 200px;
+            height: 100px;
+            padding: 2rem 2rem;
+            background-color: #7276EC;
+            border-radius: 20px;
+            text-align: center;
+            &:hover{
+                background-color: #B1B3F5;
+                transition: 0.5s;
+            }
+            i{
+                color: white;
+                font-size: 3rem;
+                margin-top: 1.2rem;
+            }
+        }
+    }
+}
+
+// perfect
+.perfect{
+    width: 100%;
+    padding: 2rem 0;
+    .perfect__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        .perfect__item{
+            h2{
+                font-size: 2.4rem;
+                font-family: Ubuntu;
+            }
+            p{
+                font-size: 1.1rem;
+                width: 80%;
+                text-align: start;
+                font-family: Karla;
+            }
+        }
+        .perfect__input{
+            .input__item{
+                input{
+                    width: 100%;
+                }
+                h3{
+                    font-family: Roboto Slab;
+                    font-size: 1.2rem;
+                }
+                .span__item{
+                    text-align: center;
+                    span{
+                        font-family: Roboto Slab;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// choose
+.choose{
+    width: 100%;
+    margin-bottom: 3rem;
+    background: rgb(239,239,253);
+    background: -moz-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+    background: -webkit-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+    background: linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+    .choose__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        align-items: center;
+        .choose__img{
+            img{
+                width: 80%;
+            }
+        }
+        .choose__item{
+            width: 75%;
+            margin: 0 auto;
+            h2{
+                margin-top: 8rem;
+                font-size: 2.6rem;
+                font-family: Ubuntu;
+                margin-bottom: 2.5rem;
+            }
+            p{
+                font-size: 1.2rem;
+                font-family: Karla;
+            }
+        }
+    }
+}
+
+// vision
+.vision{
+    width: 100%;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+    .vision__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        text-align: center;
+        .vision__item{
+            text-align: center;
+            h3{
+                font-size: 1.6rem;
+                font-family: Ubuntu;
+            }
+            p{
+                font-family: Karla;
+                width: 80%;
+                margin: 0 auto;
+            }
+            .vision__btn{
+                width: 100px;
+                height: 100px;
+                padding: 1rem 1rem;
+                border-radius: 20px;
+                background-color: #6266EA;
+                margin: 0 auto;
+                text-align: center;
+                i{
+                    color: white;
+                    font-size: 3rem;
+                    margin-top: 1.6rem;
+                }
+            }
+        }
+    }
+}
+// stay
+.stay{
+    width: 100%;
+    padding: 3rem 0;
+    background-color: #F6F9FE;
+    .stay__banner{
+        text-align: center;
+        h2{
+            font-size: 2.6rem;
+            font-family: Ubuntu;
+        }
+        .input__group{
+            margin-bottom: 1.6rem;
+            input{
+                width: 30%;
+                padding: 1rem 0.5rem;
+                border-radius: 30px;
+                text-indent: 10px;
+                color: #3726b5;
+                border: 0.5px solid dimgray;
+                font-family: Roboto Slab;
+            }
+            button{
+                padding: 1rem 2rem;
+                border-radius: 30px;
+                border: 1px solid #6266EA;
+                background-color: #6266EA;
+                color: white;
+                font-family: Roboto Slab;
+                cursor: pointer;
+                &:hover{
+                    background-color: #8588e4;
+                    transition: 0.5s;
+                    border: 1px solid #8588e4;
+                }
+            }
+        }
+        p{
+            font-size: 1.4rem;
+            font-family: Karla;
+            width: 50%;
+            text-align: center;
+            margin: 0 auto;
+            opacity: 0.70;
+        }
+    }
+}
+// work qismi
+// work header
+.work__header{
+    .navigation{
+        width: 100%;
+        padding: 1rem 0;
+        background-color: #fff;
+        .nav__bar{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                a{
+                text-decoration: none;
+                color: black;
+                    .fa-city{
+                        font-size: 2rem;
+                        color: black;
+                    }
+                    span{
+                        font-size: 1.8rem;
+                        font-family: Roboto Slab;
+                        margin-right: 10px;
+                        margin-left: 15px;
+                    }
+                    b{
+                        font-size: 1.8rem;
+                        font-family: Ubuntu;
+                        color: #4252CE;
+                    }
+                }
+            }
+            .nav{
+                a{
+                    text-decoration: none;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                    font-size: 1.2rem;
+                    font-family: Ubuntu;
+                    color: #737373;
+                    &:hover{
+                        padding: 0.5rem 1rem;
+                        background-color: #4232C2;
+                        border-radius: 20px;
+                        color: white;
+                    }
+                }
+                i{
+                    font-size: 2rem;
+                    color: #4232C2;
+                    display: none;
+                }
+            }
+            .social{
+                i{
+                    font-size: 1.5rem;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    color: #4252CE;
+                }
+            }
+            .bars{
+                display: none;
+            }
+        }
+    }
+    .work__banner{
+        width: 100%;
+        background-image: url(/img/banner-bg-02.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 6rem 0;
+        .banner__item{
+            width: 100%;
+            text-align: center;
+            h2{
+                color: white;
+                font-family: Ubuntu;
+                font-size: 2.4rem;
+            }
+            h3{
+                color: white;
+                font-family: Roboto Slab;
+                font-size: 1.4rem;
+            }
+            p{
+                width: 60%;
+                text-align: center;
+                margin: 0 auto;
+                color: white;
+                margin-bottom: 2rem;
+                font-family: Karla;
+            }
+            .work__input{
+                input{
+                    padding: 0.8rem 2rem;
+                    border-radius: 30px;
+                    background: transparent;
+                    color: white;
+                    border: 2px solid white;
+                    margin-right: 15px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                        transition: 0.5s;
+                    }
+                }
+                button{
+                    padding: 0.8rem 2rem;
+                    border-radius: 30px;
+                    background-color: #6266EA;
+                    color: white;
+                    border: 2px solid #6266EA;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+// work digital
+.work__digital{
+    width: 100%;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    .work__title{
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        .content__title{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 3rem;
+            align-items: center;
+            .title__item{
+                font-size: 1.2rem;
+                font-family: Ubuntu;
+                padding: 0.6rem 0;
+                &:hover{
+                    padding: 0.6rem 0;
+                    background-color: #3726b5;
+                    color: white;
+                    border-radius: 30px;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+    
+}
+// work blog
+.work__blog{
+    width: 100%;
+    margin-bottom: 2rem;
+    .work__container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 6rem;
+        .work__container__item{
+            width: 100%;
+            border-radius: 20px;
+            border: 1px solid dimgray;
+            padding: 1rem 1rem;
+            .digital__img{
+                width: 100%;
+                border-radius: 20px;
+                img{
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+            h2{
+                font-family: Roboto Slab;
+            }
+            p{
+                font-family: Ubuntu;
+            }
+            span{
+                color: #3726b5;
+                font-size: 1.2rem;
+                font-family: Ubuntu;
+            }
+        }
+    }
+}
+
+// transform
+.transform{
+    width: 100%;
+    padding: 2rem 0;
+    background-color: #F6F9FE;
+    .transform__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 3rem;
+        .transform__item{
+            width: 100%;
+            text-align: start;
+            h3{
+                font-size: 1.6rem;
+                font-family: Ubuntu;
+                opacity: 0.60;
+            }
+            h2{
+                font-size: 2rem;
+                font-family: Roboto Slab;
+            }
+            p{
+                font-family: Karla;
+                width: 80%;
+                opacity: 0.60;
+            }
+        }
+        .transform__img__content{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            .img__item{
+                img{
+                    width: 100%;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}
+// pricing qismi
+.pricing__header{
+    .navigation{
+        width: 100%;
+        padding: 1rem 0;
+        background-color: #fff;
+        box-shadow: 0 15px 10px 0 rgba(0,0,0,0.2);
+        .nav__bar{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                a{
+                text-decoration: none;
+                color: black;
+                    .fa-city{
+                        font-size: 2rem;
+                        color: black;
+                    }
+                    span{
+                        font-size: 1.8rem;
+                        font-family: Roboto Slab;
+                        margin-right: 10px;
+                        margin-left: 15px;
+                    }
+                    b{
+                        font-size: 1.8rem;
+                        font-family: Ubuntu;
+                        color: #4252CE;
+                    }
+                }
+            }
+            .nav{
+                a{
+                    text-decoration: none;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                    font-size: 1.2rem;
+                    font-family: Ubuntu;
+                    color: #737373;
+                    &:hover{
+                        padding: 0.5rem 1rem;
+                        background-color: #4232C2;
+                        border-radius: 20px;
+                        color: white;
+                    }
+                }
+                i{
+                    font-size: 2rem;
+                    color: #4232C2;
+                    display: none;
+                }
+            }
+            .social{
+                i{
+                    font-size: 1.5rem;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    color: #4252CE;
+                }
+            }
+            .bars{
+                display: none;
+            }
+        }
+    }
+}
+// pricing plan
+.pricing__plan{
+    width: 100%;
+    padding: 3rem 0;
+    .plan__title{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+        h2{
+            font-size: 2.5rem;
+            font-family: Ubuntu;
+            margin-bottom: 0px;
+        }
+        p{
+            font-family: Karla;
+        }
+    }
+    .pricing__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6rem;
+        text-align: center;
+        .pricing__item{
+            border: 1px solid rgb(190, 190, 190);
+            padding: 1rem 0;
+            border-radius: 20px;
+            .pricing__table{
+                width: 40%;
+                margin: 0 auto;
+                .fa-cube{
+                    font-size: 3.5rem;
+                    color: #6266EA;
+                }
+                h3{
+                    font-family: Ubuntu;
+                }
+                span{
+                    display: block;
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                    font-family: Roboto Slab;
+                }
+                b{
+                    display: block;
+                    margin-bottom: 1rem;
+                    text-align: start;
+                    font-family: Ubuntu;
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+                button{
+                    padding: 0.8rem 1.5rem;
+                    border-radius: 20px;
+                    margin-top: 3rem;
+                    background-color: white;
+                    border: 2px solid #6266EA;
+                    color: #6266EA;
+                    &:hover{
+                        color: white;
+                        background-color: #6266EA;
+                        transition: 0.5s;
+                    }
+                }
+            }
+
+        }
+        .standard__item{
+            border: 1px solid #6266EA;
+            border-radius: 20px;
+            padding: 5rem 0rem;
+            background-color: #6266EA;
+            color: white;
+            .pricing__table{
+                width: 40%;
+                margin: 0 auto;
+                .fa-cube{
+                    font-size: 3.5rem;
+                }
+                h3{
+                    font-family: Ubuntu;
+                    font-size: 1.4rem;
+                }
+                span{
+                    display: block;
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                    font-family: Roboto Slab;
+                }
+                b{
+                    display: block;
+                    margin-bottom: 1.2rem;
+                    text-align: start;
+                    font-family: Ubuntu;
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+                button{
+                    padding: 0.8rem 1.5rem;
+                    border-radius: 20px;
+                    margin-top: 3rem;
+                    background-color: #6266EA;
+                    border: 2px solid white;
+                    color: white;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: white;
+                        color: #6266EA;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
+// our pricing
+.our__pricing{
+    width: 100%;
+    background-color: #F6F9FE;
+    padding: 2rem 0;
+    .pricing__title{
+        text-align: center;
+        margin: 3rem;
+        h2{
+            font-family: Ubuntu;
+            font-size: 2.5rem;
+            margin-bottom: 0rem;
+        }
+        p{
+            font-family: Karla;
+        }
+    }
+    .our__banner{
+        width: 100%;
+        .our__pricing__content{
+            width: 70%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border: 1px solid rgb(192, 192, 192);
+            gap: 3rem;
+            border-radius: 20px;
+            margin: 0 auto;
+            margin-top: 2rem;
+            .pricing__btn{
+                background-color: #6266EA;
+                width: 50%;
+                border-radius: 20px;
+                padding: 2rem 2rem;
+                text-align: center;
+                color: white;
+                i{
+                    font-size: 3rem;
+                }
+                h3{
+                    font-family: Ubuntu;
+                }
+            }
+            .our__item{
+                padding: 2rem 2rem;
+                b{
+                    display: block;
+                    margin-bottom: 1rem;
+                    font-family: Roboto Slab;
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .our__button{
+                text-align: center;
+                span{
+                    display: block;
+                    margin-top: 3.5rem;
+                    font-family: Ubuntu;
+                }
+                button{
+                    display: block;
+                    margin: 0 auto;
+                    margin-top: 0.8rem;
+                    padding: 0.5rem 2rem;
+                    border-radius: 30px;
+                    border: 2px solid #6266EA;
+                    background-color: white;
+                    color: #6266EA;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #6266EA;
+                        color: white;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
 
 // loader
     .loader{
