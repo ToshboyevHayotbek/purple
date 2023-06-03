@@ -1,707 +1,331 @@
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1100px){
     .header{
         .navigation{
+            width: 100%;
+            padding: 1rem 0;
+            background-color: #fff;
+            margin-bottom: 10%;
+            box-shadow: 0 15px 10px 0 rgba(0,0,0,0.2);
             .nav__bar{
                 .logo{
+                    width: 30%;
                     a{
-                        text-decoration: none;
-                        color: black;
-                            .fa-city{
-                                font-size: 1.8rem;
-                                color: black;
-                            }
-                            span{
-                                font-size: 1.6rem;
-                                font-family: Roboto Slab;
-                                margin-right: 10px;
-                                margin-left: 15px;
-                            }
-                            b{
-                                font-size: 1.6rem;
-                                font-family: Ubuntu;
-                                color: #4252CE;
+                    text-decoration: none;
+                    color: black;
+                        .fa-city{
+                            font-size: 1.8rem;
+                            color: black;
+                        }
+                        span{
+                            font-size: 1.5rem;
+                            font-family: Roboto Slab;
+                            margin-right: 10px;
+                            margin-left: 10px;
+                        }
+                        b{
+                            font-size: 1.5rem;
+                            font-family: Ubuntu;
+                            color: #4252CE;
                         }
                     }
                 }
                 .nav{
-                    width: 100%;
-                    height: 100vh;
-                    position: fixed;
-                    top: 5rem;
-                    left: 0;
-                    text-align: center;
-                    background-color: #525fbf;
-                    z-index: 800;
-                    padding-top: 6rem;
-                    margin: 0 auto;
-                    display: none;
                     a{
                         
-                        text-decoration: none;
-                        font-size: 2rem;
-                        display: block;
+                        margin-left: 1.5rem;
+                        margin-right: 1.5rem;
+                        font-size: 0.8rem;
                         font-family: Ubuntu;
-                        margin-bottom: 30px;
-                        color: #fffdfd;
-                        &:hover{
-                            width: 20%;
-                            padding: 0.5rem 1rem;
-                            background-color: #4232C2;
-                            border-radius: 20px;
-                            color: white;
-                            margin: 0 auto;
-                        }
+                        color: #737373;
                     }
-                }
-                .social{
-                    display: none;
-                }
-                .bars{
-                    display: block;
                     i{
                         font-size: 2rem;
                         color: #4232C2;
-                        display: block;
-                        
+                        display: none;
                     }
                 }
-           }
-        } 
+                .social{
+                    i{
+                        font-size: 1.3rem;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+                }
+                .bars{
+                    display: none;
+                }
+            }
+        }
         .banner{
-            .swiper{
-                .swiper-wrapper{
-                    .swiper-slide{
-                        h1{
-                            font-size: 3rem;
-                        }
-                        p{
-                            font-size: 1rem;
-                        }
-                    }
+             .swiper{
+                .swiper-slide{
+                    padding: 3rem 0;
                 }
-            }
-        }
-    }
-    .services{
-        .services__item{
-            .make__item{
-                width: 65%;
-                i{
-                    font-size: 2.4rem;
-                }
-                h3{
-                    width: 100%;
-                }
-            }
-        }
-    }
-    .design__services{
-        .design__title{
-            .title__content{
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                gap: 3rem;
-                align-items: center;
-                margin: 0 auto;
                 text-align: center;
-                .blog__item{
-                    text-decoration: none;
-                    color: white;
+                h1{
+                    color: #6266EA;
                     font-family: Ubuntu;
-                    padding: 1rem 2rem;
-                    &:hover{
-                        transition: 0.5s;
-                        background-color: #4232C2;
-                        border-radius: 40px;
-                    }
-                }
-            }
-        }
-    }
-
-   .design__img{
-    .blog__container{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-   }
-    .succesful{
-        .succesful__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            align-items: center;
-            gap: 7rem;
-            .btn__social{
-                text-align: center;
-                i{
                     font-size: 3rem;
-                    color: white;
-                }
-            }
-            .succesful__title{
-                text-align: center;
-                h2{
-                    font-family: Ubuntu;
-                    color: white;
-                    font-size: 1.3rem;
+                    width: 60%;
+                    margin: 0 auto;
+                    margin-bottom: 1.4rem;
+                    span{
+                        color: #4232C2;
+                        font-family: Roboto Slab;
+                        margin: 0 auto;
+                    }
                 }
                 p{
-                    color: white;
-                    font-size: 1rem;
-                }
-            }
-        }
-    }
-    .work{
-        .title{
-            text-align: center;
-            h2{
-                font-size: 2.4rem;
-                font-family: Ubuntu;
-            }
-        }
-        .work__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 3rem;
-            .work__item{
-                width: 100%;
-                border-radius: 20px;
-                cursor: pointer;
-                .work__img{
-                    width: 100%;
-                    overflow: hidden;
-                    position: relative;
-                    border-radius: 20px;
-                    .img__title{
-                        position: absolute;
-                        bottom: 10px;
-                        left: 10px;
-                        transition: all 0.5s linear;
-                        h2{
-                            font-family: Roboto Slab;
-                            font-size: 1.6rem;
-                        }
-                        p{
-                            font-family: Ubuntu;
-                        }
-                    }
-                    &:hover .img__title{
-                        bottom: 50%;
-                        color: white;
-                    }
-                    &:hover .work__shadow__white{
-                        transform: translateY(100vh);
-                    }
-                    &:hover .work__shadow__blue{
-                        transform: translateY(-50vh);
-                    }
-                    img{
-                        width: 100%;
-                    }
-                    .work__shadow__white{
-                        position: absolute;
-                        border-radius: 20px;
-                        width: 100%;
-                        height: 100px;
-                        background-color: rgba(255, 253, 253,1);
-                        box-shadow: 0 -10px 10px white, 
-                        0 -20px 20px white,
-                        0 -30px 30px white,
-                        - 40px 40px white;
-                        transform: translateY(-40px);
-                        transition: all 0.5s linear;
-                    }
-                    .work__shadow__blue{
-                        position: absolute;
-                        background-color: rgba($color: #4232C2, $alpha: 0.5);
-                        width: 100%;
-                        height: 100%;
-                        transform: translateY(-100vh);
-                        transition: all 0.5s linear;
-                    }
-                }
-            }
-        }    
-    }
-    .footer{
-        .footer__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 3rem;
-        }
-    }    
-}
-.hide{
-    display: none;
-}
-.show{
-    display: block;
-}
-.grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
-}
-
-    
-@media only screen and (max-width: 420px){
-    .header{
-        .navigation{
-            .nav__bar{
-                    .logo{
-                        a{
-                        text-decoration: none;
-                        color: black;
-                            .fa-city{
-                                font-size: 1.4rem;
-                                color: black;
-                            }
-                            span{
-                                font-size: 1.2rem;
-                                font-family: Roboto Slab;
-                                margin-right: 10px;
-                                margin-left: 10px;
-                            }
-                            b{
-                                font-size: 1.2rem;
-                                font-family: Ubuntu;
-                                color: #4252CE;
-                        }
-                    }
-                }
-            }
-        }
-        .banner{
-            .swiper{
-                .swiper-wrapper{
-                    .swiper-slide{
-                        h1{
-                            font-size: 1.8rem;
-                        }
-                        p{
-                            font-size: 0.6rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .services{
-        .services__item{
-            .make__item{
-                width: 92%;
-                i{
-                    font-size: 2.4rem;
-                }
-                h3{
                     width: 80%;
-                    font-size: 1.2rem;
+                    text-align: center;
+                    color: #737373;
+                    font-family: Ubuntu;
+                    margin: 0 auto;
+                }
+                .swiper-scrollbar{
+                    display: none;
+                }
+            }
+        }  
+    }
+    // services
+.services{
+    .services__title{
+        h2{
+           font-size: 2.5rem; 
+           font-family: Ubuntu;
+           margin-bottom: 2rem;
+        }
+    }
+    .services__item{
+        .make__item{
+            i{
+                font-size: 2.2rem;
+            }
+        }
+        p{
+            width: 50%;
+            font-family: Ubuntu;
+            font-size: 0.9rem;
+        }
+    }
+}
+// succesful
+.succesful{
+    .succesful__content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+        .btn__social{
+            i{
+                font-size: 4rem;
+                color: white;
+            }
+        }
+    }
+}
+// work
+.work{
+    .title{
+        h2{
+            font-size: 2.8rem;
+            font-family: Ubuntu;
+            margin-bottom: 1.5rem;
+        }
+    }
+    .work__content{
+        .work__item{
+            .work__img{
+                .img__title{
+                    h2{
+                        font-family: Roboto Slab;
+                        font-size: 1.6rem;
+                    }
+                    p{
+                        font-family: Ubuntu;
+                    }
+                }
+                &:hover .work__shadow__blue{
+                    transform: translateY(-30vh);
+                }
+            }
+        }
+    }
+}
+// footer
+.footer{
+    .footer__content{
+        .footer__item__buzz{
+            a{
+                text-decoration: none;
+                color: white;
+                margin-bottom: 3rem;
+                    .fa-city{
+                        font-size: 1.5rem;
+                        color: white;
+                        margin-bottom: 1rem;
+                    }
+                    span{
+                        font-size: 1.4rem;
+                        font-family: Roboto Slab;
+                        margin-right: 10px;
+                        margin-left: 15px;
+                    }
+                    b{
+                        font-size: 1.4rem;
+                        font-family: Ubuntu;
+                        color: white;
                 }
             }
             p{
                 font-size: 0.8rem;
-                width: 100%;
+            }
+            .social__media{
+                i{
+                    margin-left: 8px;
+                    margin-right: 8px;
+                    color: white;
+                    font-size: 1.5rem;
+                }
+            }
+    
+        }
+        .footer__item{
+            h2{
+                color: white;
+                font-family: Ubuntu;
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
             }
         }
-    }
-    .design__services{
-        width: 100%;
-        .design__title{
-            .title__content{
-                width: 30%;
-                display: flex;
-                justify-content: center;
-                gap: 3rem;
-                align-items: center;
-                margin: 0 auto;
-                text-align: center;
-                display: block;
-                .blog__item{
+        .footer__item__for{
+            h2{
+                color: white;
+                font-family: Ubuntu;
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+            .tel{
+                margin-bottom: 1rem;
+                i{
+                    color: white;
+                    font-size: 1.6rem;
+                }
+                a{
                     text-decoration: none;
                     color: white;
-                    font-family: Ubuntu;
-                    padding: 1rem 1rem;
-                    &:hover{
-                        transition: 0.5s;
-                        background-color: #4232C2;
-                        border-radius: 40px;
+                    margin-left: 10px;
+                    font-size: 1.1rem;
+                    font-family: Roboto Slab;
                 }
             }
-            }
-        }
-     }
-
-     .blog__container{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 100%;
-        gap: 3rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-     }
-     .succesful{
-        .succesful__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 100%;
-            align-items: center;
-            gap: 2rem;
-            .btn__social{
+            .gmail{
                 i{
-                    font-size: 2rem;
                     color: white;
+                    font-size: 1.4rem;
                 }
-            }
-            .succesful__title{
-                text-align: center;
-                h2{
-                    font-family: Ubuntu;
+                a{
+                    text-decoration: none;
                     color: white;
-                    font-size: 1rem;
-                }
-                p{
-                    color: white;
-                    font-size: 1rem;
-                }
-            }
-            .button__view{
-                text-align: center;
-                margin: 0 auto;
-                button{
-                    padding: 1rem 1rem;
-                    background-color: #4232C2;
-                    border: none;
-                    border-radius: 30px;
-                    margin: 0 auto;
-                    text-align: center;
-                    &:hover{
-                        background-color: #3726b5;
-                        transition: 0.5s;
-                    }
-                    a{
-                        color: white;
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-    }
-    .work{
-        .title{
-            text-align: center;
-            h2{
-                font-size: 2.4rem;
-                font-family: Ubuntu;
-            }
-        }
-        .work__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 100%;
-            gap: 3rem;
-            .work__item{
-                width: 100%;
-                border-radius: 20px;
-                cursor: pointer;
-                .work__img{
-                    width: 100%;
-                    overflow: hidden;
-                    position: relative;
-                    border-radius: 20px;
-                    .img__title{
-                        position: absolute;
-                        bottom: 10px;
-                        left: 10px;
-                        transition: all 0.5s linear;
-                        h2{
-                            font-family: Roboto Slab;
-                            font-size: 1.6rem;
-                        }
-                        p{
-                            font-family: Ubuntu;
-                        }
-                    }
-                    &:hover .img__title{
-                        bottom: 50%;
-                        color: white;
-                    }
-                    &:hover .work__shadow__white{
-                        transform: translateY(100vh);
-                    }
-                    &:hover .work__shadow__blue{
-                        transform: translateY(-50vh);
-                    }
-                    img{
-                        width: 100%;
-                    }
-                    .work__shadow__white{
-                        position: absolute;
-                        border-radius: 20px;
-                        width: 100%;
-                        height: 100px;
-                        background-color: rgba(255, 253, 253,1);
-                        box-shadow: 0 -10px 10px white, 
-                        0 -20px 20px white,
-                        0 -30px 30px white,
-                        - 40px 40px white;
-                        transform: translateY(-40px);
-                        transition: all 0.5s linear;
-                    }
-                    .work__shadow__blue{
-                        position: absolute;
-                        background-color: rgba($color: #4232C2, $alpha: 0.5);
-                        width: 100%;
-                        height: 100%;
-                        transform: translateY(-100vh);
-                        transition: all 0.5s linear;
-                    }
+                    margin-left: 10px;
+                    font-size: 0.9rem;
+                    font-family: Roboto Slab;
+          
                 }
             }
         }    
     }
-    .footer{
-        .footer__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 100%;
-            gap: 3rem;
-        }
-    }
-    .copyright{
-        .copyright__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 100%;
-            text-align: center;
-        }
-    }
 }
-
-
-// about responsive
-@media only screen and (max-width: 768px){
-    .about__header{
-        .navigation{
-            .nav__bar{
-                .logo{
-                    a{
-                        text-decoration: none;
-                        color: black;
-                            .fa-city{
-                                font-size: 1.8rem;
-                                color: black;
-                            }
-                            span{
-                                font-size: 1.6rem;
-                                font-family: Roboto Slab;
-                                margin-right: 10px;
-                                margin-left: 15px;
-                            }
-                            b{
-                                font-size: 1.6rem;
-                                font-family: Ubuntu;
-                                color: #4252CE;
-                        }
-                    }
-                }
-                .nav{
-                    width: 100%;
-                    height: 100vh;
-                    position: fixed;
-                    top: 5rem;
-                    left: 0;
-                    text-align: center;
-                    background-color: #525fbf;
-                    z-index: 800;
-                    padding-top: 6rem;
-                    margin: 0 auto;
-                    display: none;
-                    a{
-                        
-                        text-decoration: none;
-                        font-size: 2rem;
-                        display: block;
-                        font-family: Ubuntu;
-                        margin-bottom: 30px;
-                        color: #fffdfd;
-                        &:hover{
-                            width: 20%;
-                            padding: 0.5rem 1rem;
-                            background-color: #4232C2;
-                            border-radius: 20px;
-                            color: white;
-                            margin: 0 auto;
-                        }
-                    }
-                }
-                .social{
-                    display: none;
-                }
-                .bars{
-                    display: block;
-                    i{
-                        font-size: 2rem;
-                        color: #4232C2;
-                        display: block;
-                        
-                    }
-                }
-           }
-        } 
-    }
-    .about__header{
-        .about__banner{
-            background-color: #F6F9FE;
-            .about__content{
-                width: 100%;
-                display: grid;
-                grid-template-columns: 100%;
-                gap: 3rem;
-                align-items: center;
-                .about__item{
-                    h2{
-                        font-size: 2.8rem;
-                        font-family: Ubuntu;
-                        color: #4252CE;
-                        border-bottom: 5px solid #4252CE;
-                        width: 36%;
-                    }
-                    p{
-                        font-family: Roboto Slab;
-                    }
-                }
+// copyright
+.copyright{
+    .copyright__content{
+        .copyright__item{
+            p{
+                color: white;
+                font-family: Ubuntu;
             }
         }
-    }
-
-    // about team
-    .about__team{
-        width: 100%;
-        padding: 3.8rem 0;
-        .team__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 100%;
-            gap: 2rem;
-            align-items: center;
-            .team__item{
-                width: 100%;
-                h2{
-                    font-size: 3.2rem;
-                    width: 40%;
-                    font-family: Ubuntu;
-                    border-bottom: 5px solid #4252CE;
-                }
-                p{
+        .copyright__temp{
+            p{
+                color: white;
+                a{
+                    color: white;
+                    text-decoration: none;
                     font-family: Roboto Slab;
                 }
             }
-            .team__item__img{
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 2rem;
-                align-items: center;
-                .img__item{
-                    .team__img{
-                        text-align: center;
-                        img{
-                            border-radius: 100%;
-                            width: 70%;
-                            margin: 0 auto;
-                        }
-                        &:hover{
-                            width: 90%;
-                            transition: 1s;
-                        }
+        }
+    }
+}
+// about qismi
+.about__header{
+    width: 100%;
+    .navigation{
+        width: 100%;
+        padding: 1rem 0;
+        background-color: #fff;
+        margin-bottom: 20px;
+        box-shadow: 0 15px 10px 0 rgba(0,0,0,0.2);
+        .nav__bar{
+            .logo{
+                width: 30%;
+                a{
+                text-decoration: none;
+                color: black;
+                    .fa-city{
+                        font-size: 1.8rem;
+                        color: black;
                     }
-                    .title__img{
-                        width: 100%;
-                        text-align: center;
-                        h3{
-                            font-family: Ubuntu;
-                            font-size: 1.2rem;
-                            color: #4252CE;
-                        }
-                        p{
-                            font-family: Karla;
-                            color: #737373;
-                        }
+                    span{
+                        font-size: 1.5rem;
+                        font-family: Roboto Slab;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                    }
+                    b{
+                        font-size: 1.5rem;
+                        font-family: Ubuntu;
+                        color: #4252CE;
                     }
                 }
             }
-        }
-    }
-
-    // about partner
-    .partner{
-        .partner__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            margin: 0 auto;
-            .partner__item{
-                width: 200px;
-                height: 100px;
-                padding: 2rem 2rem;
-                background-color: #7276EC;
-                border-radius: 20px;
-                text-align: center;
-                &:hover{
-                    background-color: #B1B3F5;
-                    transition: 0.5s;
+            .nav{
+                a{
+                    
+                    margin-left: 1.5rem;
+                    margin-right: 1.5rem;
+                    font-size: 0.8rem;
+                    font-family: Ubuntu;
+                    color: #737373;
                 }
                 i{
-                    color: white;
-                    font-size: 3rem;
-                    margin-top: 1.2rem;
+                    font-size: 2rem;
+                    color: #4232C2;
+                    display: none;
+                }
+            }
+            .social{
+                i{
+                    font-size: 1.3rem;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+            .bars{
+                display: none;
                 }
             }
         }
-    }
-    // about perfect
-    .perfect{
-        width: 100%;
-        padding: 2rem 0;
-        .perfect__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 100%;
-            gap: 3rem;
-            .perfect__item{
-                h2{
-                    font-size: 2.4rem;
-                    font-family: Ubuntu;
-                }
-                p{
-                    font-size: 1.1rem;
-                    width: 80%;
-                    text-align: start;
-                    font-family: Karla;
-                }
-            }
-            .perfect__input{
-                .input__item{
-                    input{
-                        width: 100%;
-                    }
-                    h3{
-                        font-family: Roboto Slab;
-                        font-size: 1.2rem;
-                    }
-                    .span__item{
-                        text-align: center;
-                        span{
+        .about__header{
+            .about__banner{
+                .about__content{
+                    .about__item{
+                        h2{
+                            font-size: 2.6rem;
+                        }
+                        p{
                             font-family: Roboto Slab;
                         }
                     }
@@ -709,807 +333,169 @@
             }
         }
     }
-    // about choose
-    .choose{
-        width: 100%;
-        margin-bottom: 3rem;
-        background: rgb(239,239,253);
-        background: -moz-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
-        background: -webkit-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
-        background: linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
-        .choose__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 100%;
-            gap: 1rem;
-            align-items: center;
-            .choose__img{
-                img{
-                    width: 80%;
-                }
+// team
+.about__team{
+    .team__content{
+        .team__item{
+            width: 75%;
+            h2{
+                font-size: 2.2rem;
+                font-family: Ubuntu;
+                border-bottom: 5px solid #4252CE;
+                margin-bottom: 1rem;
+                display: inline-block;
             }
-            .choose__item{
-                width: 75%;
-                margin: 0 auto;
-                h2{
-                    margin-top: 8rem;
-                    font-size: 2.6rem;
-                    font-family: Ubuntu;
-                    margin-bottom: 2.5rem;
-                }
-                p{
-                    font-size: 1.2rem;
-                    font-family: Karla;
-                }
+            p{
+                font-family: Roboto Slab;
+                font-size: 0.8rem;
             }
         }
     }
-
-// about vision
-.vision{
-    width: 100%;
-    padding: 3rem 0;
-    margin-bottom: 2rem;
-    .vision__content{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
-        text-align: center;
-        .vision__item{
-            text-align: center;
-            h3{
-                font-size: 1.6rem;
-                font-family: Ubuntu;
+}
+// perfect
+.perfect{
+    .perfect__content{
+        .perfect__item{
+            h2{
+                font-size: 2.2rem;
             }
+            p{
+                font-size: 1rem;
+                width: 80%;
+            }
+        }
+    }
+}
+// choose
+.choose{
+    .choose__content{
+        .choose__img{
+            img{
+                width: 80%;
+            }
+        }
+        .choose__item{
+            h2{
+                margin-top: 12rem;
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-size: 1rem;
+                font-family: Karla;
+            }
+        }
+    }
+}
+// vision
+.vision{
+    .vision__content{
+        .vision__item{
             p{
                 font-family: Karla;
                 width: 80%;
                 margin: 0 auto;
                 font-size: 0.9rem;
             }
-            .vision__btn{
-                width: 100px;
-                height: 100px;
-                padding: 1rem 1rem;
-                border-radius: 20px;
-                background-color: #6266EA;
-                margin: 0 auto;
-                text-align: center;
-                i{
-                    color: white;
-                    font-size: 3rem;
-                    margin-top: 1.6rem;
-                }
-            }
         }
     }
 }
-// about stay
+// stay
 .stay{
-    width: 100%;
-    padding: 3rem 0;
-    background-color: #F6F9FE;
     .stay__banner{
         text-align: center;
         h2{
-            font-size: 2.6rem;
-            font-family: Ubuntu;
-        }
-        .input__group{
-            margin-bottom: 1.6rem;
-            input{
-                width: 70%;
-                padding: 1rem 0.5rem;
-                border-radius: 30px;
-                text-indent: 10px;
-                color: #3726b5;
-                border: 0.5px solid dimgray;
-                font-family: Roboto Slab;
-            }
-            button{
-                padding: 1rem 2rem;
-                border-radius: 30px;
-                border: 1px solid #6266EA;
-                background-color: #6266EA;
-                color: white;
-                font-family: Roboto Slab;
-                cursor: pointer;
-                &:hover{
-                    background-color: #8588e4;
-                    transition: 0.5s;
-                    border: 1px solid #8588e4;
-                }
-            }
+            font-size: 2.3rem;
         }
         p{
-            font-size: 1.2rem;
-            font-family: Karla;
-            width: 100%;
-            text-align: center;
-            margin: 0 auto;
-            opacity: 0.70;
+            font-size: 1.1rem;
         }
     }
 }
-// about footer
-    .footer{
-        .footer__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 3rem;
-        }
-    }    
-
-}
-// about responsive 420
-@media only screen and (max-width: 420px){
-    // about banner
-    .about__header{
-        .about__banner{
-            background-color: #F6F9FE;
-            .about__content{
-                width: 100%;
-                display: grid;
-                grid-template-columns: 100%;
-                gap: 3rem;
-                align-items: center;
-                .about__item{
-                    h2{
-                        font-size: 2.4rem;
+// work
+.work__header{
+    .navigation{
+        width: 100%;
+        padding: 1rem 0;
+        background-color: #fff;
+        .nav__bar{
+            .logo{
+                width: 30%;
+                a{
+                text-decoration: none;
+                color: black;
+                    .fa-city{
+                        font-size: 1.8rem;
+                        color: black;
+                    }
+                    span{
+                        font-size: 1.5rem;
+                        font-family: Roboto Slab;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                    }
+                    b{
+                        font-size: 1.5rem;
                         font-family: Ubuntu;
                         color: #4252CE;
-                        border-bottom: 5px solid #4252CE;
-                        width: 55%;
-                    }
-                    p{
-                        font-family: Roboto Slab;
-                        font-size: 0.8rem;
                     }
                 }
             }
-        }
-    }
-
-    // about team
-    .about__team{
-        width: 100%;
-        padding: 3.8rem 0;
-        .team__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 100%;
-            gap: 2rem;
-            align-items: center;
-            .team__item{
-                width: 100%;
-                h2{
-                    font-size: 2.6rem;
-                    width: 61%;
-                    font-family: Ubuntu;
-                    border-bottom: 5px solid #4252CE;
-                }
-                p{
-                    font-family: Roboto Slab;
+            .nav{
+                a{
+                    
+                    margin-left: 1.5rem;
+                    margin-right: 1.5rem;
                     font-size: 0.8rem;
-                }
-            }
-            .team__item__img{
-                width: 100%;
-                display: grid;
-                grid-template-columns: 100%;
-                gap: 2rem;
-                align-items: center;
-                .img__item{
-                    .team__img{
-                        text-align: center;
-                        img{
-                            border-radius: 100%;
-                            width: 70%;
-                            margin: 0 auto;
-                        }
-                        &:hover{
-                            width: 90%;
-                            transition: 1s;
-                        }
-                    }
-                    .title__img{
-                        width: 100%;
-                        text-align: center;
-                        h3{
-                            font-family: Ubuntu;
-                            font-size: 1.2rem;
-                            color: #4252CE;
-                        }
-                        p{
-                            font-family: Karla;
-                            color: #737373;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    // about partner
-    .partner{
-        .partner__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 100%;
-            gap: 1rem;
-            margin: 0 auto;
-            .partner__item{
-                width: 200px;
-                height: 100px;
-                padding: 2rem 2rem;
-                background-color: #7276EC;
-                border-radius: 20px;
-                text-align: center;
-                margin: 0 auto;
-                &:hover{
-                    background-color: #B1B3F5;
-                    transition: 0.5s;
+                    font-family: Ubuntu;
+                    color: #737373;
                 }
                 i{
-                    color: white;
-                    font-size: 3rem;
-                    margin-top: 1.2rem;
-                }
-            }
-        }
-    }
-    // about perfect
-    .perfect{
-        width: 100%;
-        padding: 2rem 0;
-        .perfect__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 100%;
-            gap: 3rem;
-            .perfect__item{
-                h2{
                     font-size: 2rem;
-                    font-family: Ubuntu;
-                }
-                p{
-                    font-size: 0.8rem;
-                    width: 100%;
-                    text-align: start;
-                    font-family: Karla;
+                    color: #4232C2;
+                    display: none;
                 }
             }
-            .perfect__input{
-                .input__item{
-                    input{
-                        width: 100%;
-                    }
-                    h3{
-                        font-family: Roboto Slab;
-                        font-size: 1.2rem;
-                    }
-                    .span__item{
-                        text-align: center;
-                        span{
-                            font-family: Roboto Slab;
-                        }
-                    }
+            .social{
+                i{
+                    font-size: 1.3rem;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+            .bars{
+                display: none;
                 }
             }
         }
     }
-    // about choose
-    .choose{
-        width: 100%;
-        margin-bottom: 3rem;
-        background: rgb(239,239,253);
-        background: -moz-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
-        background: -webkit-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
-        background: linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
-        .choose__content{
+// work digital
+.work__digital{
+    .work__title{
+        .content__title{
             width: 100%;
             display: grid;
-            grid-template-columns: 100%;
-            gap: 1rem;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 2.5rem;
             align-items: center;
-            .choose__img{
-                img{
-                    width: 80%;
-                }
-            }
-            .choose__item{
-                width: 100%;
-                margin: 0 auto;
-                h2{
-                    margin-top: 0rem;
-                    font-size: 2.2rem;
-                    font-family: Ubuntu;
-                    margin-bottom: 1rem;
-                }
-                p{
-                    font-size: 0.8rem;
-                    font-family: Karla;
-                }
-            }
-        }
-    }
-    // about vision
-    .vision{
-        width: 100%;
-        padding: 3rem 0;
-        margin-bottom: 2rem;
-        .vision__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 100%;
-            gap: 3rem;
-            text-align: center;
-            .vision__item{
-                text-align: center;
-                h3{
-                    font-size: 1.6rem;
-                    font-family: Ubuntu;
-                }
-                p{
-                    font-family: Karla;
-                    width: 90%;
-                    margin: 0 auto;
-                    font-size: 0.9rem;
-                }
-                .vision__btn{
-                    width: 100px;
-                    height: 100px;
-                    padding: 1rem 1rem;
-                    border-radius: 20px;
-                    background-color: #6266EA;
-                    margin: 0 auto;
-                    text-align: center;
-                    i{
-                        color: white;
-                        font-size: 3rem;
-                        margin-top: 1.6rem;
-                    }
-                }
-            }
-        }
-    }
-    // about stay
-    .stay{
-        width: 100%;
-        padding: 3rem 0;
-        background-color: #F6F9FE;
-        .stay__banner{
-            text-align: center;
-            h2{
-                font-size: 2rem;
+            .title__item{
+                font-size: 1rem;
                 font-family: Ubuntu;
-            }
-            .input__group{
-                margin-bottom: 1.6rem;
-                input{
-                    width: 65%;
-                    padding: 0.6rem 0.5rem;
-                    border-radius: 30px;
-                    text-indent: 10px;
-                    color: #3726b5;
-                    border: 0.5px solid dimgray;
-                    font-family: Roboto Slab;
-                }
-                button{
-                    padding: 0.6rem 1rem;
-                    border-radius: 30px;
-                    border: 1px solid #6266EA;
-                    background-color: #6266EA;
-                    color: white;
-                    font-family: Roboto Slab;
-                    cursor: pointer;
-                    &:hover{
-                        background-color: #8588e4;
-                        transition: 0.5s;
-                        border: 1px solid #8588e4;
-                    }
-                }
-            }
-            p{
-                font-size: 0.8rem;
-                font-family: Karla;
-                width: 100%;
-                text-align: center;
-                margin: 0 auto;
-                opacity: 0.70;
-            }
-        }
-    }
-    // about responsive
-    .footer{
-        .footer__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 100%;
-            gap: 3rem;
-        }
-    } 
-    // about copyright
-    .copyright{
-        .copyright__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 100%;
-            text-align: center;
-        }
-    }
-}
-// work responsive
+                padding: 0.5rem 0;
 
-@media only screen and (max-width: 768px){
-    // work header
-    .work__header{
-        .navigation{
-            .nav__bar{
-                .logo{
-                    a{
-                        text-decoration: none;
-                        color: black;
-                            .fa-city{
-                                font-size: 1.8rem;
-                                color: black;
-                            }
-                            span{
-                                font-size: 1.6rem;
-                                font-family: Roboto Slab;
-                                margin-right: 10px;
-                                margin-left: 15px;
-                            }
-                            b{
-                                font-size: 1.6rem;
-                                font-family: Ubuntu;
-                                color: #4252CE;
-                        }
-                    }
-                }
-                .nav{
-                    width: 100%;
-                    height: 100vh;
-                    position: fixed;
-                    top: 5rem;
-                    left: 0;
-                    text-align: center;
-                    background-color: #525fbf;
-                    z-index: 800;
-                    padding-top: 6rem;
-                    margin: 0 auto;
-                    display: none;
-                    a{
-                        
-                        text-decoration: none;
-                        font-size: 2rem;
-                        display: block;
-                        font-family: Ubuntu;
-                        margin-bottom: 30px;
-                        color: #fffdfd;
-                        &:hover{
-                            width: 20%;
-                            padding: 0.5rem 1rem;
-                            background-color: #4232C2;
-                            border-radius: 20px;
-                            color: white;
-                            margin: 0 auto;
-                        }
-                    }
-                }
-                .social{
-                    display: none;
-                }
-                .bars{
-                    display: block;
-                    i{
-                        font-size: 2rem;
-                        color: #4232C2;
-                        display: block;
-                        
-                    }
-                }
-           }
-        } 
-    }
-    // work digital
-    .work__digital{
-        width: 100%;
-        padding: 2rem 0;
-        margin-bottom: 2rem;
-        .work__title{
-            width: 70%;
-            text-align: center;
-            margin: 0 auto;
-            margin-bottom: 3rem;
-            .content__title{
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
-                gap: 1rem;
-                align-items: center;
-                .title__item{
-                    font-size: 0.8rem;
-                    font-family: Ubuntu;
-                    padding: 0.6rem 0;
-                    &:hover{
-                        padding: 0.6rem 0;
-                        background-color: #3726b5;
-                        color: white;
-                        border-radius: 30px;
-                        transition: 0.5s;
-                    }
-                }
-            }
-        }
-        
-        .previous{
-            width: 100%;
-            text-align: center;
-            button{
-                padding: 0.5rem 0.5rem;
-                margin-left: 3px;
-                margin-right: 3px;
-                background-color: #6266EA;
-                border-radius: 8px;
-                color: white;
-                font-family: Ubuntu;
-                border: 5px solid #6266EA;
-                font-size: 1.1rem;
-                &:hover{
-                    border: 5px solid #9396d5;
-                    transition: 0.3s;
-                    cursor: pointer;
-                }
             }
         }
     }
-    // work blog
-    .work__blog{
-        width: 100%;
-        margin-bottom: 2rem;
-        .work__container{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            align-items: center;
-            gap: 6rem;
-            .work__container__item{
-                width: 100%;
-                border-radius: 20px;
-                border: 1px solid dimgray;
-                padding: 1rem 1rem;
-                .digital__img{
-                    width: 100%;
-                    border-radius: 20px;
-                    img{
-                        width: 100%;
-                        border-radius: 10px;
-                    }
-                }
-                h2{
-                    font-family: Roboto Slab;
-                }
-                p{
-                    font-family: Ubuntu;
-                }
-                span{
-                    color: #3726b5;
-                    font-size: 1.2rem;
-                    font-family: Ubuntu;
-                }
-            }
-        }
-    }
-    // transform
-    .transform{
-        width: 100%;
-        padding: 2rem 0;
-        background-color: #F6F9FE;
-        .transform__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            align-items: center;
-            gap: 3rem;
-            .transform__item{
-                width: 100%;
-                text-align: start;
-                h3{
-                    font-size: 1.4rem;
-                    font-family: Ubuntu;
-                    opacity: 0.60;
-                }
-                h2{
-                    font-size: 1.6rem;
-                    font-family: Roboto Slab;
-                }
-                p{
-                    font-family: Karla;
-                    width: 80%;
-                    opacity: 0.60;
-                    font-size: 0.8rem;
-                }
-            }
-            .transform__img__content{
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
-                .img__item{
-                    img{
-                        width: 100%;
-                        border-radius: 20px;
-                    }
-                }
-            }
-        }
-    }
-    // footer
-    .footer{
-        .footer__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 3rem;
-        }
-    }  
 }
-@media only screen and (max-width: 420px){
-    // work header
-    .work__header{
-        .navigation{
-            .nav__bar{
-                    .logo{
-                        a{
-                        text-decoration: none;
-                        color: black;
-                            .fa-city{
-                                font-size: 1.4rem;
-                                color: black;
-                            }
-                            span{
-                                font-size: 1.2rem;
-                                font-family: Roboto Slab;
-                                margin-right: 10px;
-                                margin-left: 10px;
-                            }
-                            b{
-                                font-size: 1.2rem;
-                                font-family: Ubuntu;
-                                color: #4252CE;
-                        }
-                    }
-                }
-            }
-        }
-        // work banner
-        .work__banner{
-            width: 100%;
-            background-image: url(/img/banner-bg-02.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 4rem 0;
-            .banner__item{
-                width: 100%;
-                text-align: center;
-                h2{
-                    color: white;
-                    font-family: Ubuntu;
-                    font-size: 2.2rem;
-                }
-                h3{
-                    color: white;
-                    font-family: Roboto Slab;
-                    font-size: 1.2rem;
-                }
-                p{
-                    width: 60%;
-                    text-align: center;
-                    margin: 0 auto;
-                    color: white;
-                    margin-bottom: 2rem;
-                    font-family: Karla;
-                    font-size: 0.8rem;
-                }
-                .work__input{
-                    input{
-                        padding: 0.8rem 2rem;
-                        border-radius: 30px;
-                        background: transparent;
-                        color: white;
-                        border: 2px solid white;
-                        margin-right: 15px;
-                        cursor: pointer;
-                        &:hover{
-                            background-color: white;
-                            color: black;
-                            transition: 0.5s;
-                        }
-                    }
-                    button{
-                        padding: 0.8rem 2rem;
-                        border-radius: 30px;
-                        background-color: #6266EA;
-                        color: white;
-                        border: 2px solid #6266EA;
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
-    }
-    // work digital
-    .work__digital{
-        width: 100%;
-        padding: 2rem 0;
-        margin-bottom: 2rem;
-        .work__title{
-            width: 70%;
-            text-align: center;
-            margin: 0 auto;
-            margin-bottom: 3rem;
-            .content__title{
-                width: 100%;
-                display: grid;
-                grid-template-columns: 100%;
-                gap: 1rem;
-                align-items: center;
-                .title__item{
-                    font-size: 1.2rem;
-                    font-family: Ubuntu;
-                    padding: 0.6rem 0;
-                    &:hover{
-                        padding: 0.6rem 0;
-                        background-color: #3726b5;
-                        color: white;
-                        border-radius: 30px;
-                        transition: 0.5s;
-                    }
-                }
-            }
-        }
-        .previous{
-            width: 100%;
-            text-align: center;
-            button{
-                padding: 0.5rem 0.5rem;
-                margin-left: 3px;
-                margin-right: 3px;
-                background-color: #6266EA;
-                border-radius: 8px;
-                color: white;
-                font-family: Ubuntu;
-                border: 5px solid #6266EA;
-                font-size: 1.1rem;
-                &:hover{
-                    border: 5px solid #9396d5;
-                    transition: 0.3s;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
 // work blog
 .work__blog{
-    width: 100%;
-    margin-bottom: 2rem;
     .work__container{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 100%;
-        align-items: center;
-        gap: 6rem;
+        gap: 3rem;
         .work__container__item{
-            width: 100%;
-            border-radius: 20px;
-            border: 1px solid dimgray;
-            padding: 1rem 1rem;
             .digital__img{
                 width: 100%;
                 border-radius: 20px;
+                margin-bottom: 0.5rem;
                 img{
                     width: 100%;
                     border-radius: 10px;
@@ -1517,78 +503,575 @@
             }
             h2{
                 font-family: Roboto Slab;
-            }
-            p{
-                font-family: Ubuntu;
-            }
-            span{
-                color: #3726b5;
                 font-size: 1.2rem;
-                font-family: Ubuntu;
+                margin-bottom: 1rem;
             }
         }
     }
 }
 // transform
 .transform{
-    width: 100%;
-    padding: 2rem 0;
-    background-color: #F6F9FE;
     .transform__content{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 100%;
-        align-items: center;
-        gap: 3rem;
         .transform__item{
-            width: 100%;
-            text-align: start;
-            h3{
-                font-size: 1.6rem;
-                font-family: Ubuntu;
-                opacity: 0.60;
-            }
-            h2{
-                font-size: 2rem;
-                font-family: Roboto Slab;
-            }
             p{
                 font-family: Karla;
                 width: 80%;
                 opacity: 0.60;
-                font-size: 0.9rem;
+                font-size: 0.8rem;
             }
         }
-        .transform__img__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            .img__item{
-                img{
-                    width: 100%;
-                    border-radius: 20px;
+    }
+}
+// footer
+.footer{
+    .footer__content{
+        .footer__item__buzz{
+            a{
+                text-decoration: none;
+                color: white;
+                margin-bottom: 3rem;
+                    .fa-city{
+                        font-size: 1.5rem;
+                        color: white;
+                        margin-bottom: 1rem;
+                    }
+                    span{
+                        font-size: 1.4rem;
+                        font-family: Roboto Slab;
+                        margin-right: 10px;
+                        margin-left: 15px;
+                    }
+                    b{
+                        font-size: 1.4rem;
+                        font-family: Ubuntu;
+                        color: white;
+                }
+            }
+            p{
+                font-size: 0.8rem;
+            }
+            .social__media{
+                i{
+                    margin-left: 8px;
+                    margin-right: 8px;
+                    color: white;
+                    font-size: 1.5rem;
+                }
+            }
+    
+        }
+        .footer__item{
+            h2{
+                color: white;
+                font-family: Ubuntu;
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+            }
+        }
+        .footer__item__for{
+            h2{
+                color: white;
+                font-family: Ubuntu;
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+            .tel{
+                margin-bottom: 1rem;
+                i{
+                    color: white;
+                    font-size: 1.6rem;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    margin-left: 10px;
+                    font-size: 1.1rem;
+                    font-family: Roboto Slab;
+                }
+            }
+            .gmail{
+                i{
+                    color: white;
+                    font-size: 1.4rem;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    margin-left: 10px;
+                    font-size: 0.8rem;
+                    font-family: Roboto Slab;
+          
+                }
+            }
+        }    
+    }
+}
+// copyright
+.copyright{
+    .copyright__content{
+        .copyright__item{
+            p{
+                color: white;
+                font-family: Ubuntu;
+            }
+        }
+        .copyright__temp{
+            p{
+                color: white;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-family: Roboto Slab;
                 }
             }
         }
     }
 }
-    // footer
-    .footer{
-        .footer__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 100%;
-            gap: 3rem;
+// pricing qismi
+.pricing__header{
+    .navigation{
+        width: 100%;
+        padding: 1rem 0;
+        background-color: #fff;
+        margin-bottom: 20px;
+        box-shadow: 0 15px 10px 0 rgba(0,0,0,0.2);
+        .nav__bar{
+            .logo{
+                width: 30%;
+                a{
+                text-decoration: none;
+                color: black;
+                    .fa-city{
+                        font-size: 1.8rem;
+                        color: black;
+                    }
+                    span{
+                        font-size: 1.5rem;
+                        font-family: Roboto Slab;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                    }
+                    b{
+                        font-size: 1.5rem;
+                        font-family: Ubuntu;
+                        color: #4252CE;
+                    }
+                }
+            }
+            .nav{
+                a{
+                    
+                    margin-left: 1.5rem;
+                    margin-right: 1.5rem;
+                    font-size: 0.8rem;
+                    font-family: Ubuntu;
+                    color: #737373;
+                }
+                i{
+                    font-size: 2rem;
+                    color: #4232C2;
+                    display: none;
+                }
+            }
+            .social{
+                i{
+                    font-size: 1.3rem;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+            .bars{
+                display: none;
+                }
+            }
         }
     }
-    // copyright
-    .copyright{
-        .copyright__content{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 100%;
-            text-align: center;
+// pricing plan
+.pricing__plan{
+    .pricing__content{
+        gap: 4rem;
+        .pricing__item{
+            .pricing__table{
+                width: 60%;
+                margin: 0 auto;
+                .fa-cube{
+                    font-size: 3.5rem;
+                    color: #6266EA;
+                    margin-bottom: 0.5rem;
+                }
+                h3{
+                    font-family: Ubuntu;
+                    margin-bottom: 0.5rem;
+                    font-size: 1.2rem;
+                }
+                span{
+                    display: block;
+                    font-size: 0.9rem;
+                }
+                b{
+                    font-size: 0.8rem;
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+        }
+        .standard__item{
+            padding: 5rem 0rem;
+            .pricing__table{
+                width: 60%;
+                .fa-cube{
+                    font-size: 3.5rem;
+                    margin-bottom: 1rem;
+                }
+                h3{
+                    font-size: 1.3rem;
+                    margin-bottom: 0.5rem;
+                }
+                span{
+                    display: block;
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                    font-family: Roboto Slab;
+                }
+            }
         }
     }
+}
+// our pricing
+.our__pricing{
+    .our__banner{
+        width: 100%;
+        .our__pricing__content{
+            gap: 2rem;
+            .pricing__btn{
+                background-color: #6266EA;
+                width: 70%;
+                border-radius: 20px;
+                padding: 1.5rem 1.5rem;
+            }
+            .our__item{
+                padding: 1.5rem 1rem;
+                b{
+                    font-size: 0.8rem;
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+// pricing story
+.story__pricing{
+    .story__title{
+        margin-bottom: 3rem;
+    }
+    .story__content{
+        .story__item{
+            .item__content{
+                .story__btn{
+                    i{
+                        margin-top: 15px;
+                    }
+                }
+                .story__text{
+                    h3{
+                        font-family: Ubuntu;
+                        font-size: 1.2rem;
+                        margin-bottom: 0.5rem;
+                    }
+                    p{
+                        font-family: Karla;
+                        font-size: 0.9rem;
+                    }
+                }
+                .story__button{
+                    button{
+                        padding: 0.6rem 1.5rem;
+                        border-radius: 30px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+// footer
+.footer{
+    .footer__content{
+        .footer__item__buzz{
+            a{
+                text-decoration: none;
+                color: white;
+                margin-bottom: 3rem;
+                    .fa-city{
+                        font-size: 1.5rem;
+                        color: white;
+                        margin-bottom: 1rem;
+                    }
+                    span{
+                        font-size: 1.4rem;
+                        font-family: Roboto Slab;
+                        margin-right: 10px;
+                        margin-left: 15px;
+                    }
+                    b{
+                        font-size: 1.4rem;
+                        font-family: Ubuntu;
+                        color: white;
+                }
+            }
+            p{
+                font-size: 0.8rem;
+            }
+            .social__media{
+                i{
+                    margin-left: 8px;
+                    margin-right: 8px;
+                    color: white;
+                    font-size: 1.5rem;
+                }
+            }
+    
+        }
+        .footer__item{
+            h2{
+                color: white;
+                font-family: Ubuntu;
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+            }
+        }
+        .footer__item__for{
+            h2{
+                color: white;
+                font-family: Ubuntu;
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+            .tel{
+                margin-bottom: 1rem;
+                i{
+                    color: white;
+                    font-size: 1.6rem;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    margin-left: 10px;
+                    font-size: 1.1rem;
+                    font-family: Roboto Slab;
+                }
+            }
+            .gmail{
+                i{
+                    color: white;
+                    font-size: 1.4rem;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    margin-left: 10px;
+                    font-size: 0.8rem;
+                    font-family: Roboto Slab;
+          
+                }
+            }
+        }    
+    }
+}
+// copyright
+.copyright{
+    .copyright__content{
+        .copyright__item{
+            p{
+                color: white;
+                font-family: Ubuntu;
+            }
+        }
+        .copyright__temp{
+            p{
+                color: white;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-family: Roboto Slab;
+                }
+            }
+        }
+    }
+}
+// contact qismi
+.contact__header{
+    .navigation{
+        width: 100%;
+        padding: 1rem 0;
+        background-color: #fff;
+        margin-bottom: 20px;
+        box-shadow: 0 15px 10px 0 rgba(0,0,0,0.2);
+        .nav__bar{
+            .logo{
+                width: 30%;
+                a{
+                text-decoration: none;
+                color: black;
+                    .fa-city{
+                        font-size: 1.8rem;
+                        color: black;
+                    }
+                    span{
+                        font-size: 1.5rem;
+                        font-family: Roboto Slab;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                    }
+                    b{
+                        font-size: 1.5rem;
+                        font-family: Ubuntu;
+                        color: #4252CE;
+                    }
+                }
+            }
+            .nav{
+                a{
+                    
+                    margin-left: 1.5rem;
+                    margin-right: 1.5rem;
+                    font-size: 0.8rem;
+                    font-family: Ubuntu;
+                    color: #737373;
+                }
+                i{
+                    font-size: 2rem;
+                    color: #4232C2;
+                    display: none;
+                }
+            }
+            .social{
+                i{
+                    font-size: 1.3rem;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+            .bars{
+                display: none;
+                }
+            }
+        }
+    }
+// contact input
+.contact__section{
+    .contact__title{
+        h2{
+            font-size: 2.2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    .contact__section__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        align-items: center;
+        .media__item{
+            width: 100%;
+            .media__content{
+                width: 65%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin-bottom: 2rem;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+    }
+}
+// digital qismi
+.digital__header{
+    .navigation{
+        width: 100%;
+        padding: 1rem 0;
+        background-color: #fff;
+        .nav__bar{
+            .logo{
+                width: 30%;
+                a{
+                text-decoration: none;
+                color: black;
+                    .fa-city{
+                        font-size: 1.8rem;
+                        color: black;
+                    }
+                    span{
+                        font-size: 1.5rem;
+                        font-family: Roboto Slab;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                    }
+                    b{
+                        font-size: 1.5rem;
+                        font-family: Ubuntu;
+                        color: #4252CE;
+                    }
+                }
+            }
+            .nav{
+                a{
+                    
+                    margin-left: 1.5rem;
+                    margin-right: 1.5rem;
+                    font-size: 0.8rem;
+                    font-family: Ubuntu;
+                    color: #737373;
+                }
+                i{
+                    font-size: 2rem;
+                    color: #4232C2;
+                    display: none;
+                }
+            }
+            .social{
+                i{
+                    font-size: 1.3rem;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+            .bars{
+                display: none;
+                }
+            }
+        }
+    }
+// digital text
+.digital__section{
+    .text__banner{
+        .vesti{
+            h3{
+                font-size: 2.2rem;
+                font-family: Ubuntu;
+            }
+        }
+    }
+}
+//comment
+.comment{
+    .comment__banner{
+        .comment__content{
+            .comment__img{
+                width: 18%;
+            }
+        }
+    }
+}
+
+}
+
+@media only screen and (max-width: 768px){
+    
 }

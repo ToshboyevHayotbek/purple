@@ -1,4 +1,14 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1100px) {
+  .header .navigation {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #fff;
+    margin-bottom: 10%;
+    box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  .header .navigation .nav__bar .logo {
+    width: 30%;
+  }
   .header .navigation .nav__bar .logo a {
     text-decoration: none;
     color: black;
@@ -8,358 +18,93 @@
     color: black;
   }
   .header .navigation .nav__bar .logo a span {
-    font-size: 1.6rem;
-    font-family: Roboto Slab;
-    margin-right: 10px;
-    margin-left: 15px;
-  }
-  .header .navigation .nav__bar .logo a b {
-    font-size: 1.6rem;
-    font-family: Ubuntu;
-    color: #4252CE;
-  }
-  .header .navigation .nav__bar .nav {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 5rem;
-    left: 0;
-    text-align: center;
-    background-color: #525fbf;
-    z-index: 800;
-    padding-top: 6rem;
-    margin: 0 auto;
-    display: none;
-  }
-  .header .navigation .nav__bar .nav a {
-    text-decoration: none;
-    font-size: 2rem;
-    display: block;
-    font-family: Ubuntu;
-    margin-bottom: 30px;
-    color: #fffdfd;
-  }
-  .header .navigation .nav__bar .nav a:hover {
-    width: 20%;
-    padding: 0.5rem 1rem;
-    background-color: #4232C2;
-    border-radius: 20px;
-    color: white;
-    margin: 0 auto;
-  }
-  .header .navigation .nav__bar .social {
-    display: none;
-  }
-  .header .navigation .nav__bar .bars {
-    display: block;
-  }
-  .header .navigation .nav__bar .bars i {
-    font-size: 2rem;
-    color: #4232C2;
-    display: block;
-  }
-  .header .banner .swiper .swiper-wrapper .swiper-slide h1 {
-    font-size: 3rem;
-  }
-  .header .banner .swiper .swiper-wrapper .swiper-slide p {
-    font-size: 1rem;
-  }
-  .services .services__item .make__item {
-    width: 65%;
-  }
-  .services .services__item .make__item i {
-    font-size: 2.4rem;
-  }
-  .services .services__item .make__item h3 {
-    width: 100%;
-  }
-  .design__services .design__title .title__content {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    align-items: center;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .design__services .design__title .title__content .blog__item {
-    text-decoration: none;
-    color: white;
-    font-family: Ubuntu;
-    padding: 1rem 2rem;
-  }
-  .design__services .design__title .title__content .blog__item:hover {
-    transition: 0.5s;
-    background-color: #4232C2;
-    border-radius: 40px;
-  }
-  .design__img .blog__container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  .succesful .succesful__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 7rem;
-  }
-  .succesful .succesful__content .btn__social {
-    text-align: center;
-  }
-  .succesful .succesful__content .btn__social i {
-    font-size: 3rem;
-    color: white;
-  }
-  .succesful .succesful__content .succesful__title {
-    text-align: center;
-  }
-  .succesful .succesful__content .succesful__title h2 {
-    font-family: Ubuntu;
-    color: white;
-    font-size: 1.3rem;
-  }
-  .succesful .succesful__content .succesful__title p {
-    color: white;
-    font-size: 1rem;
-  }
-  .work .title {
-    text-align: center;
-  }
-  .work .title h2 {
-    font-size: 2.4rem;
-    font-family: Ubuntu;
-  }
-  .work .work__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-  }
-  .work .work__content .work__item {
-    width: 100%;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  .work .work__content .work__item .work__img {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    border-radius: 20px;
-  }
-  .work .work__content .work__item .work__img .img__title {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    transition: all 0.5s linear;
-  }
-  .work .work__content .work__item .work__img .img__title h2 {
-    font-family: Roboto Slab;
-    font-size: 1.6rem;
-  }
-  .work .work__content .work__item .work__img .img__title p {
-    font-family: Ubuntu;
-  }
-  .work .work__content .work__item .work__img:hover .img__title {
-    bottom: 50%;
-    color: white;
-  }
-  .work .work__content .work__item .work__img:hover .work__shadow__white {
-    transform: translateY(100vh);
-  }
-  .work .work__content .work__item .work__img:hover .work__shadow__blue {
-    transform: translateY(-50vh);
-  }
-  .work .work__content .work__item .work__img img {
-    width: 100%;
-  }
-  .work .work__content .work__item .work__img .work__shadow__white {
-    position: absolute;
-    border-radius: 20px;
-    width: 100%;
-    height: 100px;
-    background-color: rgb(255, 253, 253);
-    box-shadow: 0 -10px 10px white, 0 -20px 20px white, 0 -30px 30px white, -40px 40px white;
-    transform: translateY(-40px);
-    transition: all 0.5s linear;
-  }
-  .work .work__content .work__item .work__img .work__shadow__blue {
-    position: absolute;
-    background-color: rgba(66, 50, 194, 0.5);
-    width: 100%;
-    height: 100%;
-    transform: translateY(-100vh);
-    transition: all 0.5s linear;
-  }
-  .footer .footer__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-  }
-}
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 3rem;
-}
-
-@media only screen and (max-width: 420px) {
-  .header .navigation .nav__bar .logo a {
-    text-decoration: none;
-    color: black;
-  }
-  .header .navigation .nav__bar .logo a .fa-city {
-    font-size: 1.4rem;
-    color: black;
-  }
-  .header .navigation .nav__bar .logo a span {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: Roboto Slab;
     margin-right: 10px;
     margin-left: 10px;
   }
   .header .navigation .nav__bar .logo a b {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: Ubuntu;
     color: #4252CE;
   }
-  .header .banner .swiper .swiper-wrapper .swiper-slide h1 {
-    font-size: 1.8rem;
+  .header .navigation .nav__bar .nav a {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 0.8rem;
+    font-family: Ubuntu;
+    color: #737373;
   }
-  .header .banner .swiper .swiper-wrapper .swiper-slide p {
-    font-size: 0.6rem;
+  .header .navigation .nav__bar .nav i {
+    font-size: 2rem;
+    color: #4232C2;
+    display: none;
   }
-  .services .services__item .make__item {
-    width: 92%;
+  .header .navigation .nav__bar .social i {
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .header .navigation .nav__bar .bars {
+    display: none;
+  }
+  .header .banner .swiper {
+    text-align: center;
+  }
+  .header .banner .swiper .swiper-slide {
+    padding: 3rem 0;
+  }
+  .header .banner .swiper h1 {
+    color: #6266EA;
+    font-family: Ubuntu;
+    font-size: 3rem;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 1.4rem;
+  }
+  .header .banner .swiper h1 span {
+    color: #4232C2;
+    font-family: Roboto Slab;
+    margin: 0 auto;
+  }
+  .header .banner .swiper p {
+    width: 80%;
+    text-align: center;
+    color: #737373;
+    font-family: Ubuntu;
+    margin: 0 auto;
+  }
+  .header .banner .swiper .swiper-scrollbar {
+    display: none;
+  }
+  .services .services__title h2 {
+    font-size: 2.5rem;
+    font-family: Ubuntu;
+    margin-bottom: 2rem;
   }
   .services .services__item .make__item i {
-    font-size: 2.4rem;
-  }
-  .services .services__item .make__item h3 {
-    width: 80%;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
   }
   .services .services__item p {
-    font-size: 0.8rem;
-    width: 100%;
-  }
-  .design__services {
-    width: 100%;
-  }
-  .design__services .design__title .title__content {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    align-items: center;
-    margin: 0 auto;
-    text-align: center;
-    display: block;
-  }
-  .design__services .design__title .title__content .blog__item {
-    text-decoration: none;
-    color: white;
+    width: 50%;
     font-family: Ubuntu;
-    padding: 1rem 1rem;
-  }
-  .design__services .design__title .title__content .blog__item:hover {
-    transition: 0.5s;
-    background-color: #4232C2;
-    border-radius: 40px;
-  }
-  .blog__container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
   }
   .succesful .succesful__content {
     width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 10rem;
   }
   .succesful .succesful__content .btn__social i {
-    font-size: 2rem;
+    font-size: 4rem;
     color: white;
-  }
-  .succesful .succesful__content .succesful__title {
-    text-align: center;
-  }
-  .succesful .succesful__content .succesful__title h2 {
-    font-family: Ubuntu;
-    color: white;
-    font-size: 1rem;
-  }
-  .succesful .succesful__content .succesful__title p {
-    color: white;
-    font-size: 1rem;
-  }
-  .succesful .succesful__content .button__view {
-    text-align: center;
-    margin: 0 auto;
-  }
-  .succesful .succesful__content .button__view button {
-    padding: 1rem 1rem;
-    background-color: #4232C2;
-    border: none;
-    border-radius: 30px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .succesful .succesful__content .button__view button:hover {
-    background-color: #3726b5;
-    transition: 0.5s;
-  }
-  .succesful .succesful__content .button__view button a {
-    color: white;
-    text-decoration: none;
-  }
-  .work .title {
-    text-align: center;
   }
   .work .title h2 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     font-family: Ubuntu;
-  }
-  .work .work__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 3rem;
-  }
-  .work .work__content .work__item {
-    width: 100%;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  .work .work__content .work__item .work__img {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    border-radius: 20px;
-  }
-  .work .work__content .work__item .work__img .img__title {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    transition: all 0.5s linear;
+    margin-bottom: 1.5rem;
   }
   .work .work__content .work__item .work__img .img__title h2 {
     font-family: Roboto Slab;
@@ -368,51 +113,101 @@
   .work .work__content .work__item .work__img .img__title p {
     font-family: Ubuntu;
   }
-  .work .work__content .work__item .work__img:hover .img__title {
-    bottom: 50%;
+  .work .work__content .work__item .work__img:hover .work__shadow__blue {
+    transform: translateY(-30vh);
+  }
+  .footer .footer__content .footer__item__buzz a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 3rem;
+  }
+  .footer .footer__content .footer__item__buzz a .fa-city {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  .footer .footer__content .footer__item__buzz a span {
+    font-size: 1.4rem;
+    font-family: Roboto Slab;
+    margin-right: 10px;
+    margin-left: 15px;
+  }
+  .footer .footer__content .footer__item__buzz a b {
+    font-size: 1.4rem;
+    font-family: Ubuntu;
     color: white;
   }
-  .work .work__content .work__item .work__img:hover .work__shadow__white {
-    transform: translateY(100vh);
+  .footer .footer__content .footer__item__buzz p {
+    font-size: 0.8rem;
   }
-  .work .work__content .work__item .work__img:hover .work__shadow__blue {
-    transform: translateY(-50vh);
+  .footer .footer__content .footer__item__buzz .social__media i {
+    margin-left: 8px;
+    margin-right: 8px;
+    color: white;
+    font-size: 1.5rem;
   }
-  .work .work__content .work__item .work__img img {
+  .footer .footer__content .footer__item h2 {
+    color: white;
+    font-family: Ubuntu;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .footer .footer__content .footer__item__for h2 {
+    color: white;
+    font-family: Ubuntu;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .footer .footer__content .footer__item__for .tel {
+    margin-bottom: 1rem;
+  }
+  .footer .footer__content .footer__item__for .tel i {
+    color: white;
+    font-size: 1.6rem;
+  }
+  .footer .footer__content .footer__item__for .tel a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-family: Roboto Slab;
+  }
+  .footer .footer__content .footer__item__for .gmail i {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .footer .footer__content .footer__item__for .gmail a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    font-family: Roboto Slab;
+  }
+  .copyright .copyright__content .copyright__item p {
+    color: white;
+    font-family: Ubuntu;
+  }
+  .copyright .copyright__content .copyright__temp p {
+    color: white;
+  }
+  .copyright .copyright__content .copyright__temp p a {
+    color: white;
+    text-decoration: none;
+    font-family: Roboto Slab;
+  }
+  .about__header {
     width: 100%;
   }
-  .work .work__content .work__item .work__img .work__shadow__white {
-    position: absolute;
-    border-radius: 20px;
+  .about__header .navigation {
     width: 100%;
-    height: 100px;
-    background-color: rgb(255, 253, 253);
-    box-shadow: 0 -10px 10px white, 0 -20px 20px white, 0 -30px 30px white, -40px 40px white;
-    transform: translateY(-40px);
-    transition: all 0.5s linear;
+    padding: 1rem 0;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.2);
   }
-  .work .work__content .work__item .work__img .work__shadow__blue {
-    position: absolute;
-    background-color: rgba(66, 50, 194, 0.5);
-    width: 100%;
-    height: 100%;
-    transform: translateY(-100vh);
-    transition: all 0.5s linear;
+  .about__header .navigation .nav__bar .logo {
+    width: 30%;
   }
-  .footer .footer__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 3rem;
-  }
-  .copyright .copyright__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 768px) {
   .about__header .navigation .nav__bar .logo a {
     text-decoration: none;
     color: black;
@@ -422,575 +217,98 @@
     color: black;
   }
   .about__header .navigation .nav__bar .logo a span {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-family: Roboto Slab;
     margin-right: 10px;
-    margin-left: 15px;
+    margin-left: 10px;
   }
   .about__header .navigation .nav__bar .logo a b {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-family: Ubuntu;
     color: #4252CE;
-  }
-  .about__header .navigation .nav__bar .nav {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 5rem;
-    left: 0;
-    text-align: center;
-    background-color: #525fbf;
-    z-index: 800;
-    padding-top: 6rem;
-    margin: 0 auto;
-    display: none;
   }
   .about__header .navigation .nav__bar .nav a {
-    text-decoration: none;
-    font-size: 2rem;
-    display: block;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 0.8rem;
     font-family: Ubuntu;
-    margin-bottom: 30px;
-    color: #fffdfd;
+    color: #737373;
   }
-  .about__header .navigation .nav__bar .nav a:hover {
-    width: 20%;
-    padding: 0.5rem 1rem;
-    background-color: #4232C2;
-    border-radius: 20px;
-    color: white;
-    margin: 0 auto;
-  }
-  .about__header .navigation .nav__bar .social {
-    display: none;
-  }
-  .about__header .navigation .nav__bar .bars {
-    display: block;
-  }
-  .about__header .navigation .nav__bar .bars i {
+  .about__header .navigation .nav__bar .nav i {
     font-size: 2rem;
     color: #4232C2;
-    display: block;
+    display: none;
   }
-  .about__header .about__banner {
-    background-color: #F6F9FE;
+  .about__header .navigation .nav__bar .social i {
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  .about__header .about__banner .about__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 3rem;
-    align-items: center;
+  .about__header .navigation .nav__bar .bars {
+    display: none;
   }
-  .about__header .about__banner .about__content .about__item h2 {
-    font-size: 2.8rem;
-    font-family: Ubuntu;
-    color: #4252CE;
-    border-bottom: 5px solid #4252CE;
-    width: 36%;
+  .about__header .about__header .about__banner .about__content .about__item h2 {
+    font-size: 2.6rem;
   }
-  .about__header .about__banner .about__content .about__item p {
+  .about__header .about__header .about__banner .about__content .about__item p {
     font-family: Roboto Slab;
-  }
-  .about__team {
-    width: 100%;
-    padding: 3.8rem 0;
-  }
-  .about__team .team__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 2rem;
-    align-items: center;
   }
   .about__team .team__content .team__item {
-    width: 100%;
-  }
-  .about__team .team__content .team__item h2 {
-    font-size: 3.2rem;
-    width: 40%;
-    font-family: Ubuntu;
-    border-bottom: 5px solid #4252CE;
-  }
-  .about__team .team__content .team__item p {
-    font-family: Roboto Slab;
-  }
-  .about__team .team__content .team__item__img {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    align-items: center;
-  }
-  .about__team .team__content .team__item__img .img__item .team__img {
-    text-align: center;
-  }
-  .about__team .team__content .team__item__img .img__item .team__img img {
-    border-radius: 100%;
-    width: 70%;
-    margin: 0 auto;
-  }
-  .about__team .team__content .team__item__img .img__item .team__img:hover {
-    width: 90%;
-    transition: 1s;
-  }
-  .about__team .team__content .team__item__img .img__item .title__img {
-    width: 100%;
-    text-align: center;
-  }
-  .about__team .team__content .team__item__img .img__item .title__img h3 {
-    font-family: Ubuntu;
-    font-size: 1.2rem;
-    color: #4252CE;
-  }
-  .about__team .team__content .team__item__img .img__item .title__img p {
-    font-family: Karla;
-    color: #737373;
-  }
-  .partner .partner__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin: 0 auto;
-  }
-  .partner .partner__content .partner__item {
-    width: 200px;
-    height: 100px;
-    padding: 2rem 2rem;
-    background-color: #7276EC;
-    border-radius: 20px;
-    text-align: center;
-  }
-  .partner .partner__content .partner__item:hover {
-    background-color: #B1B3F5;
-    transition: 0.5s;
-  }
-  .partner .partner__content .partner__item i {
-    color: white;
-    font-size: 3rem;
-    margin-top: 1.2rem;
-  }
-  .perfect {
-    width: 100%;
-    padding: 2rem 0;
-  }
-  .perfect .perfect__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 3rem;
-  }
-  .perfect .perfect__content .perfect__item h2 {
-    font-size: 2.4rem;
-    font-family: Ubuntu;
-  }
-  .perfect .perfect__content .perfect__item p {
-    font-size: 1.1rem;
-    width: 80%;
-    text-align: start;
-    font-family: Karla;
-  }
-  .perfect .perfect__content .perfect__input .input__item input {
-    width: 100%;
-  }
-  .perfect .perfect__content .perfect__input .input__item h3 {
-    font-family: Roboto Slab;
-    font-size: 1.2rem;
-  }
-  .perfect .perfect__content .perfect__input .input__item .span__item {
-    text-align: center;
-  }
-  .perfect .perfect__content .perfect__input .input__item .span__item span {
-    font-family: Roboto Slab;
-  }
-  .choose {
-    width: 100%;
-    margin-bottom: 3rem;
-    background: rgb(239, 239, 253);
-    background: linear-gradient(0deg, rgb(239, 239, 253) 50%, rgb(255, 255, 255) 50%);
-  }
-  .choose .choose__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 1rem;
-    align-items: center;
-  }
-  .choose .choose__content .choose__img img {
-    width: 80%;
-  }
-  .choose .choose__content .choose__item {
     width: 75%;
-    margin: 0 auto;
-  }
-  .choose .choose__content .choose__item h2 {
-    margin-top: 8rem;
-    font-size: 2.6rem;
-    font-family: Ubuntu;
-    margin-bottom: 2.5rem;
-  }
-  .choose .choose__content .choose__item p {
-    font-size: 1.2rem;
-    font-family: Karla;
-  }
-  .vision {
-    width: 100%;
-    padding: 3rem 0;
-    margin-bottom: 2rem;
-  }
-  .vision .vision__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    text-align: center;
-  }
-  .vision .vision__content .vision__item {
-    text-align: center;
-  }
-  .vision .vision__content .vision__item h3 {
-    font-size: 1.6rem;
-    font-family: Ubuntu;
-  }
-  .vision .vision__content .vision__item p {
-    font-family: Karla;
-    width: 80%;
-    margin: 0 auto;
-    font-size: 0.9rem;
-  }
-  .vision .vision__content .vision__item .vision__btn {
-    width: 100px;
-    height: 100px;
-    padding: 1rem 1rem;
-    border-radius: 20px;
-    background-color: #6266EA;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .vision .vision__content .vision__item .vision__btn i {
-    color: white;
-    font-size: 3rem;
-    margin-top: 1.6rem;
-  }
-  .stay {
-    width: 100%;
-    padding: 3rem 0;
-    background-color: #F6F9FE;
-  }
-  .stay .stay__banner {
-    text-align: center;
-  }
-  .stay .stay__banner h2 {
-    font-size: 2.6rem;
-    font-family: Ubuntu;
-  }
-  .stay .stay__banner .input__group {
-    margin-bottom: 1.6rem;
-  }
-  .stay .stay__banner .input__group input {
-    width: 70%;
-    padding: 1rem 0.5rem;
-    border-radius: 30px;
-    text-indent: 10px;
-    color: #3726b5;
-    border: 0.5px solid dimgray;
-    font-family: Roboto Slab;
-  }
-  .stay .stay__banner .input__group button {
-    padding: 1rem 2rem;
-    border-radius: 30px;
-    border: 1px solid #6266EA;
-    background-color: #6266EA;
-    color: white;
-    font-family: Roboto Slab;
-    cursor: pointer;
-  }
-  .stay .stay__banner .input__group button:hover {
-    background-color: #8588e4;
-    transition: 0.5s;
-    border: 1px solid #8588e4;
-  }
-  .stay .stay__banner p {
-    font-size: 1.2rem;
-    font-family: Karla;
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    opacity: 0.7;
-  }
-  .footer .footer__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-  }
-}
-@media only screen and (max-width: 420px) {
-  .about__header .about__banner {
-    background-color: #F6F9FE;
-  }
-  .about__header .about__banner .about__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 3rem;
-    align-items: center;
-  }
-  .about__header .about__banner .about__content .about__item h2 {
-    font-size: 2.4rem;
-    font-family: Ubuntu;
-    color: #4252CE;
-    border-bottom: 5px solid #4252CE;
-    width: 55%;
-  }
-  .about__header .about__banner .about__content .about__item p {
-    font-family: Roboto Slab;
-    font-size: 0.8rem;
-  }
-  .about__team {
-    width: 100%;
-    padding: 3.8rem 0;
-  }
-  .about__team .team__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 2rem;
-    align-items: center;
-  }
-  .about__team .team__content .team__item {
-    width: 100%;
   }
   .about__team .team__content .team__item h2 {
-    font-size: 2.6rem;
-    width: 61%;
-    font-family: Ubuntu;
-    border-bottom: 5px solid #4252CE;
-  }
-  .about__team .team__content .team__item p {
-    font-family: Roboto Slab;
-    font-size: 0.8rem;
-  }
-  .about__team .team__content .team__item__img {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 2rem;
-    align-items: center;
-  }
-  .about__team .team__content .team__item__img .img__item .team__img {
-    text-align: center;
-  }
-  .about__team .team__content .team__item__img .img__item .team__img img {
-    border-radius: 100%;
-    width: 70%;
-    margin: 0 auto;
-  }
-  .about__team .team__content .team__item__img .img__item .team__img:hover {
-    width: 90%;
-    transition: 1s;
-  }
-  .about__team .team__content .team__item__img .img__item .title__img {
-    width: 100%;
-    text-align: center;
-  }
-  .about__team .team__content .team__item__img .img__item .title__img h3 {
-    font-family: Ubuntu;
-    font-size: 1.2rem;
-    color: #4252CE;
-  }
-  .about__team .team__content .team__item__img .img__item .title__img p {
-    font-family: Karla;
-    color: #737373;
-  }
-  .partner .partner__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 1rem;
-    margin: 0 auto;
-  }
-  .partner .partner__content .partner__item {
-    width: 200px;
-    height: 100px;
-    padding: 2rem 2rem;
-    background-color: #7276EC;
-    border-radius: 20px;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .partner .partner__content .partner__item:hover {
-    background-color: #B1B3F5;
-    transition: 0.5s;
-  }
-  .partner .partner__content .partner__item i {
-    color: white;
-    font-size: 3rem;
-    margin-top: 1.2rem;
-  }
-  .perfect {
-    width: 100%;
-    padding: 2rem 0;
-  }
-  .perfect .perfect__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 3rem;
-  }
-  .perfect .perfect__content .perfect__item h2 {
-    font-size: 2rem;
-    font-family: Ubuntu;
-  }
-  .perfect .perfect__content .perfect__item p {
-    font-size: 0.8rem;
-    width: 100%;
-    text-align: start;
-    font-family: Karla;
-  }
-  .perfect .perfect__content .perfect__input .input__item input {
-    width: 100%;
-  }
-  .perfect .perfect__content .perfect__input .input__item h3 {
-    font-family: Roboto Slab;
-    font-size: 1.2rem;
-  }
-  .perfect .perfect__content .perfect__input .input__item .span__item {
-    text-align: center;
-  }
-  .perfect .perfect__content .perfect__input .input__item .span__item span {
-    font-family: Roboto Slab;
-  }
-  .choose {
-    width: 100%;
-    margin-bottom: 3rem;
-    background: rgb(239, 239, 253);
-    background: linear-gradient(0deg, rgb(239, 239, 253) 50%, rgb(255, 255, 255) 50%);
-  }
-  .choose .choose__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 1rem;
-    align-items: center;
-  }
-  .choose .choose__content .choose__img img {
-    width: 80%;
-  }
-  .choose .choose__content .choose__item {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .choose .choose__content .choose__item h2 {
-    margin-top: 0rem;
     font-size: 2.2rem;
     font-family: Ubuntu;
+    border-bottom: 5px solid #4252CE;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  .about__team .team__content .team__item p {
+    font-family: Roboto Slab;
+    font-size: 0.8rem;
+  }
+  .perfect .perfect__content .perfect__item h2 {
+    font-size: 2.2rem;
+  }
+  .perfect .perfect__content .perfect__item p {
+    font-size: 1rem;
+    width: 80%;
+  }
+  .choose .choose__content .choose__img img {
+    width: 80%;
+  }
+  .choose .choose__content .choose__item h2 {
+    margin-top: 12rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
   }
   .choose .choose__content .choose__item p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: Karla;
-  }
-  .vision {
-    width: 100%;
-    padding: 3rem 0;
-    margin-bottom: 2rem;
-  }
-  .vision .vision__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 3rem;
-    text-align: center;
-  }
-  .vision .vision__content .vision__item {
-    text-align: center;
-  }
-  .vision .vision__content .vision__item h3 {
-    font-size: 1.6rem;
-    font-family: Ubuntu;
   }
   .vision .vision__content .vision__item p {
     font-family: Karla;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     font-size: 0.9rem;
-  }
-  .vision .vision__content .vision__item .vision__btn {
-    width: 100px;
-    height: 100px;
-    padding: 1rem 1rem;
-    border-radius: 20px;
-    background-color: #6266EA;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .vision .vision__content .vision__item .vision__btn i {
-    color: white;
-    font-size: 3rem;
-    margin-top: 1.6rem;
-  }
-  .stay {
-    width: 100%;
-    padding: 3rem 0;
-    background-color: #F6F9FE;
   }
   .stay .stay__banner {
     text-align: center;
   }
   .stay .stay__banner h2 {
-    font-size: 2rem;
-    font-family: Ubuntu;
-  }
-  .stay .stay__banner .input__group {
-    margin-bottom: 1.6rem;
-  }
-  .stay .stay__banner .input__group input {
-    width: 65%;
-    padding: 0.6rem 0.5rem;
-    border-radius: 30px;
-    text-indent: 10px;
-    color: #3726b5;
-    border: 0.5px solid dimgray;
-    font-family: Roboto Slab;
-  }
-  .stay .stay__banner .input__group button {
-    padding: 0.6rem 1rem;
-    border-radius: 30px;
-    border: 1px solid #6266EA;
-    background-color: #6266EA;
-    color: white;
-    font-family: Roboto Slab;
-    cursor: pointer;
-  }
-  .stay .stay__banner .input__group button:hover {
-    background-color: #8588e4;
-    transition: 0.5s;
-    border: 1px solid #8588e4;
+    font-size: 2.3rem;
   }
   .stay .stay__banner p {
-    font-size: 0.8rem;
-    font-family: Karla;
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    opacity: 0.7;
+    font-size: 1.1rem;
   }
-  .footer .footer__content {
+  .work__header .navigation {
     width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 3rem;
+    padding: 1rem 0;
+    background-color: #fff;
   }
-  .copyright .copyright__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    text-align: center;
+  .work__header .navigation .nav__bar .logo {
+    width: 30%;
   }
-}
-@media only screen and (max-width: 768px) {
   .work__header .navigation .nav__bar .logo a {
     text-decoration: none;
     color: black;
@@ -1000,333 +318,55 @@
     color: black;
   }
   .work__header .navigation .nav__bar .logo a span {
-    font-size: 1.6rem;
-    font-family: Roboto Slab;
-    margin-right: 10px;
-    margin-left: 15px;
-  }
-  .work__header .navigation .nav__bar .logo a b {
-    font-size: 1.6rem;
-    font-family: Ubuntu;
-    color: #4252CE;
-  }
-  .work__header .navigation .nav__bar .nav {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 5rem;
-    left: 0;
-    text-align: center;
-    background-color: #525fbf;
-    z-index: 800;
-    padding-top: 6rem;
-    margin: 0 auto;
-    display: none;
-  }
-  .work__header .navigation .nav__bar .nav a {
-    text-decoration: none;
-    font-size: 2rem;
-    display: block;
-    font-family: Ubuntu;
-    margin-bottom: 30px;
-    color: #fffdfd;
-  }
-  .work__header .navigation .nav__bar .nav a:hover {
-    width: 20%;
-    padding: 0.5rem 1rem;
-    background-color: #4232C2;
-    border-radius: 20px;
-    color: white;
-    margin: 0 auto;
-  }
-  .work__header .navigation .nav__bar .social {
-    display: none;
-  }
-  .work__header .navigation .nav__bar .bars {
-    display: block;
-  }
-  .work__header .navigation .nav__bar .bars i {
-    font-size: 2rem;
-    color: #4232C2;
-    display: block;
-  }
-  .work__digital {
-    width: 100%;
-    padding: 2rem 0;
-    margin-bottom: 2rem;
-  }
-  .work__digital .work__title {
-    width: 70%;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-  }
-  .work__digital .work__title .content__title {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-    align-items: center;
-  }
-  .work__digital .work__title .content__title .title__item {
-    font-size: 0.8rem;
-    font-family: Ubuntu;
-    padding: 0.6rem 0;
-  }
-  .work__digital .work__title .content__title .title__item:hover {
-    padding: 0.6rem 0;
-    background-color: #3726b5;
-    color: white;
-    border-radius: 30px;
-    transition: 0.5s;
-  }
-  .work__digital .previous {
-    width: 100%;
-    text-align: center;
-  }
-  .work__digital .previous button {
-    padding: 0.5rem 0.5rem;
-    margin-left: 3px;
-    margin-right: 3px;
-    background-color: #6266EA;
-    border-radius: 8px;
-    color: white;
-    font-family: Ubuntu;
-    border: 5px solid #6266EA;
-    font-size: 1.1rem;
-  }
-  .work__digital .previous button:hover {
-    border: 5px solid #9396d5;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-  .work__blog {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-  .work__blog .work__container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 6rem;
-  }
-  .work__blog .work__container .work__container__item {
-    width: 100%;
-    border-radius: 20px;
-    border: 1px solid dimgray;
-    padding: 1rem 1rem;
-  }
-  .work__blog .work__container .work__container__item .digital__img {
-    width: 100%;
-    border-radius: 20px;
-  }
-  .work__blog .work__container .work__container__item .digital__img img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  .work__blog .work__container .work__container__item h2 {
-    font-family: Roboto Slab;
-  }
-  .work__blog .work__container .work__container__item p {
-    font-family: Ubuntu;
-  }
-  .work__blog .work__container .work__container__item span {
-    color: #3726b5;
-    font-size: 1.2rem;
-    font-family: Ubuntu;
-  }
-  .transform {
-    width: 100%;
-    padding: 2rem 0;
-    background-color: #F6F9FE;
-  }
-  .transform .transform__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 3rem;
-  }
-  .transform .transform__content .transform__item {
-    width: 100%;
-    text-align: start;
-  }
-  .transform .transform__content .transform__item h3 {
-    font-size: 1.4rem;
-    font-family: Ubuntu;
-    opacity: 0.6;
-  }
-  .transform .transform__content .transform__item h2 {
-    font-size: 1.6rem;
-    font-family: Roboto Slab;
-  }
-  .transform .transform__content .transform__item p {
-    font-family: Karla;
-    width: 80%;
-    opacity: 0.6;
-    font-size: 0.8rem;
-  }
-  .transform .transform__content .transform__img__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-  .transform .transform__content .transform__img__content .img__item img {
-    width: 100%;
-    border-radius: 20px;
-  }
-  .footer .footer__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-  }
-}
-@media only screen and (max-width: 420px) {
-  .work__header .navigation .nav__bar .logo a {
-    text-decoration: none;
-    color: black;
-  }
-  .work__header .navigation .nav__bar .logo a .fa-city {
-    font-size: 1.4rem;
-    color: black;
-  }
-  .work__header .navigation .nav__bar .logo a span {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: Roboto Slab;
     margin-right: 10px;
     margin-left: 10px;
   }
   .work__header .navigation .nav__bar .logo a b {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: Ubuntu;
     color: #4252CE;
   }
-  .work__header .work__banner {
-    width: 100%;
-    background-image: url(/img/banner-bg-02.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 4rem 0;
-  }
-  .work__header .work__banner .banner__item {
-    width: 100%;
-    text-align: center;
-  }
-  .work__header .work__banner .banner__item h2 {
-    color: white;
-    font-family: Ubuntu;
-    font-size: 2.2rem;
-  }
-  .work__header .work__banner .banner__item h3 {
-    color: white;
-    font-family: Roboto Slab;
-    font-size: 1.2rem;
-  }
-  .work__header .work__banner .banner__item p {
-    width: 60%;
-    text-align: center;
-    margin: 0 auto;
-    color: white;
-    margin-bottom: 2rem;
-    font-family: Karla;
+  .work__header .navigation .nav__bar .nav a {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     font-size: 0.8rem;
+    font-family: Ubuntu;
+    color: #737373;
   }
-  .work__header .work__banner .banner__item .work__input input {
-    padding: 0.8rem 2rem;
-    border-radius: 30px;
-    background: transparent;
-    color: white;
-    border: 2px solid white;
-    margin-right: 15px;
-    cursor: pointer;
+  .work__header .navigation .nav__bar .nav i {
+    font-size: 2rem;
+    color: #4232C2;
+    display: none;
   }
-  .work__header .work__banner .banner__item .work__input input:hover {
-    background-color: white;
-    color: black;
-    transition: 0.5s;
+  .work__header .navigation .nav__bar .social i {
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  .work__header .work__banner .banner__item .work__input button {
-    padding: 0.8rem 2rem;
-    border-radius: 30px;
-    background-color: #6266EA;
-    color: white;
-    border: 2px solid #6266EA;
-    cursor: pointer;
-  }
-  .work__digital {
-    width: 100%;
-    padding: 2rem 0;
-    margin-bottom: 2rem;
-  }
-  .work__digital .work__title {
-    width: 70%;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 3rem;
+  .work__header .navigation .nav__bar .bars {
+    display: none;
   }
   .work__digital .work__title .content__title {
     width: 100%;
     display: grid;
-    grid-template-columns: 100%;
-    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2.5rem;
     align-items: center;
   }
   .work__digital .work__title .content__title .title__item {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: Ubuntu;
-    padding: 0.6rem 0;
-  }
-  .work__digital .work__title .content__title .title__item:hover {
-    padding: 0.6rem 0;
-    background-color: #3726b5;
-    color: white;
-    border-radius: 30px;
-    transition: 0.5s;
-  }
-  .work__digital .previous {
-    width: 100%;
-    text-align: center;
-  }
-  .work__digital .previous button {
-    padding: 0.5rem 0.5rem;
-    margin-left: 3px;
-    margin-right: 3px;
-    background-color: #6266EA;
-    border-radius: 8px;
-    color: white;
-    font-family: Ubuntu;
-    border: 5px solid #6266EA;
-    font-size: 1.1rem;
-  }
-  .work__digital .previous button:hover {
-    border: 5px solid #9396d5;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-  .work__blog {
-    width: 100%;
-    margin-bottom: 2rem;
+    padding: 0.5rem 0;
   }
   .work__blog .work__container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    align-items: center;
-    gap: 6rem;
-  }
-  .work__blog .work__container .work__container__item {
-    width: 100%;
-    border-radius: 20px;
-    border: 1px solid dimgray;
-    padding: 1rem 1rem;
+    gap: 3rem;
   }
   .work__blog .work__container .work__container__item .digital__img {
     width: 100%;
     border-radius: 20px;
+    margin-bottom: 0.5rem;
   }
   .work__blog .work__container .work__container__item .digital__img img {
     width: 100%;
@@ -1334,66 +374,435 @@
   }
   .work__blog .work__container .work__container__item h2 {
     font-family: Roboto Slab;
-  }
-  .work__blog .work__container .work__container__item p {
-    font-family: Ubuntu;
-  }
-  .work__blog .work__container .work__container__item span {
-    color: #3726b5;
     font-size: 1.2rem;
-    font-family: Ubuntu;
-  }
-  .transform {
-    width: 100%;
-    padding: 2rem 0;
-    background-color: #F6F9FE;
-  }
-  .transform .transform__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    align-items: center;
-    gap: 3rem;
-  }
-  .transform .transform__content .transform__item {
-    width: 100%;
-    text-align: start;
-  }
-  .transform .transform__content .transform__item h3 {
-    font-size: 1.6rem;
-    font-family: Ubuntu;
-    opacity: 0.6;
-  }
-  .transform .transform__content .transform__item h2 {
-    font-size: 2rem;
-    font-family: Roboto Slab;
+    margin-bottom: 1rem;
   }
   .transform .transform__content .transform__item p {
     font-family: Karla;
     width: 80%;
     opacity: 0.6;
+    font-size: 0.8rem;
+  }
+  .footer .footer__content .footer__item__buzz a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 3rem;
+  }
+  .footer .footer__content .footer__item__buzz a .fa-city {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  .footer .footer__content .footer__item__buzz a span {
+    font-size: 1.4rem;
+    font-family: Roboto Slab;
+    margin-right: 10px;
+    margin-left: 15px;
+  }
+  .footer .footer__content .footer__item__buzz a b {
+    font-size: 1.4rem;
+    font-family: Ubuntu;
+    color: white;
+  }
+  .footer .footer__content .footer__item__buzz p {
+    font-size: 0.8rem;
+  }
+  .footer .footer__content .footer__item__buzz .social__media i {
+    margin-left: 8px;
+    margin-right: 8px;
+    color: white;
+    font-size: 1.5rem;
+  }
+  .footer .footer__content .footer__item h2 {
+    color: white;
+    font-family: Ubuntu;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .footer .footer__content .footer__item__for h2 {
+    color: white;
+    font-family: Ubuntu;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .footer .footer__content .footer__item__for .tel {
+    margin-bottom: 1rem;
+  }
+  .footer .footer__content .footer__item__for .tel i {
+    color: white;
+    font-size: 1.6rem;
+  }
+  .footer .footer__content .footer__item__for .tel a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-family: Roboto Slab;
+  }
+  .footer .footer__content .footer__item__for .gmail i {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .footer .footer__content .footer__item__for .gmail a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    font-family: Roboto Slab;
+  }
+  .copyright .copyright__content .copyright__item p {
+    color: white;
+    font-family: Ubuntu;
+  }
+  .copyright .copyright__content .copyright__temp p {
+    color: white;
+  }
+  .copyright .copyright__content .copyright__temp p a {
+    color: white;
+    text-decoration: none;
+    font-family: Roboto Slab;
+  }
+  .pricing__header .navigation {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  .pricing__header .navigation .nav__bar .logo {
+    width: 30%;
+  }
+  .pricing__header .navigation .nav__bar .logo a {
+    text-decoration: none;
+    color: black;
+  }
+  .pricing__header .navigation .nav__bar .logo a .fa-city {
+    font-size: 1.8rem;
+    color: black;
+  }
+  .pricing__header .navigation .nav__bar .logo a span {
+    font-size: 1.5rem;
+    font-family: Roboto Slab;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .pricing__header .navigation .nav__bar .logo a b {
+    font-size: 1.5rem;
+    font-family: Ubuntu;
+    color: #4252CE;
+  }
+  .pricing__header .navigation .nav__bar .nav a {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 0.8rem;
+    font-family: Ubuntu;
+    color: #737373;
+  }
+  .pricing__header .navigation .nav__bar .nav i {
+    font-size: 2rem;
+    color: #4232C2;
+    display: none;
+  }
+  .pricing__header .navigation .nav__bar .social i {
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .pricing__header .navigation .nav__bar .bars {
+    display: none;
+  }
+  .pricing__plan .pricing__content {
+    gap: 4rem;
+  }
+  .pricing__plan .pricing__content .pricing__item .pricing__table {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .pricing__plan .pricing__content .pricing__item .pricing__table .fa-cube {
+    font-size: 3.5rem;
+    color: #6266EA;
+    margin-bottom: 0.5rem;
+  }
+  .pricing__plan .pricing__content .pricing__item .pricing__table h3 {
+    font-family: Ubuntu;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .pricing__plan .pricing__content .pricing__item .pricing__table span {
+    display: block;
     font-size: 0.9rem;
   }
-  .transform .transform__content .transform__img__content {
+  .pricing__plan .pricing__content .pricing__item .pricing__table b {
+    font-size: 0.8rem;
+  }
+  .pricing__plan .pricing__content .pricing__item .pricing__table b i {
+    margin-right: 10px;
+  }
+  .pricing__plan .pricing__content .standard__item {
+    padding: 5rem 0rem;
+  }
+  .pricing__plan .pricing__content .standard__item .pricing__table {
+    width: 60%;
+  }
+  .pricing__plan .pricing__content .standard__item .pricing__table .fa-cube {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  .pricing__plan .pricing__content .standard__item .pricing__table h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .pricing__plan .pricing__content .standard__item .pricing__table span {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-family: Roboto Slab;
+  }
+  .our__pricing .our__banner {
+    width: 100%;
+  }
+  .our__pricing .our__banner .our__pricing__content {
+    gap: 2rem;
+  }
+  .our__pricing .our__banner .our__pricing__content .pricing__btn {
+    background-color: #6266EA;
+    width: 70%;
+    border-radius: 20px;
+    padding: 1.5rem 1.5rem;
+  }
+  .our__pricing .our__banner .our__pricing__content .our__item {
+    padding: 1.5rem 1rem;
+  }
+  .our__pricing .our__banner .our__pricing__content .our__item b {
+    font-size: 0.8rem;
+  }
+  .our__pricing .our__banner .our__pricing__content .our__item b i {
+    margin-right: 10px;
+  }
+  .story__pricing .story__title {
+    margin-bottom: 3rem;
+  }
+  .story__pricing .story__content .story__item .item__content .story__btn i {
+    margin-top: 15px;
+  }
+  .story__pricing .story__content .story__item .item__content .story__text h3 {
+    font-family: Ubuntu;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .story__pricing .story__content .story__item .item__content .story__text p {
+    font-family: Karla;
+    font-size: 0.9rem;
+  }
+  .story__pricing .story__content .story__item .item__content .story__button button {
+    padding: 0.6rem 1.5rem;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+  .footer .footer__content .footer__item__buzz a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 3rem;
+  }
+  .footer .footer__content .footer__item__buzz a .fa-city {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  .footer .footer__content .footer__item__buzz a span {
+    font-size: 1.4rem;
+    font-family: Roboto Slab;
+    margin-right: 10px;
+    margin-left: 15px;
+  }
+  .footer .footer__content .footer__item__buzz a b {
+    font-size: 1.4rem;
+    font-family: Ubuntu;
+    color: white;
+  }
+  .footer .footer__content .footer__item__buzz p {
+    font-size: 0.8rem;
+  }
+  .footer .footer__content .footer__item__buzz .social__media i {
+    margin-left: 8px;
+    margin-right: 8px;
+    color: white;
+    font-size: 1.5rem;
+  }
+  .footer .footer__content .footer__item h2 {
+    color: white;
+    font-family: Ubuntu;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .footer .footer__content .footer__item__for h2 {
+    color: white;
+    font-family: Ubuntu;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .footer .footer__content .footer__item__for .tel {
+    margin-bottom: 1rem;
+  }
+  .footer .footer__content .footer__item__for .tel i {
+    color: white;
+    font-size: 1.6rem;
+  }
+  .footer .footer__content .footer__item__for .tel a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-family: Roboto Slab;
+  }
+  .footer .footer__content .footer__item__for .gmail i {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .footer .footer__content .footer__item__for .gmail a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    font-family: Roboto Slab;
+  }
+  .copyright .copyright__content .copyright__item p {
+    color: white;
+    font-family: Ubuntu;
+  }
+  .copyright .copyright__content .copyright__temp p {
+    color: white;
+  }
+  .copyright .copyright__content .copyright__temp p a {
+    color: white;
+    text-decoration: none;
+    font-family: Roboto Slab;
+  }
+  .contact__header .navigation {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  .contact__header .navigation .nav__bar .logo {
+    width: 30%;
+  }
+  .contact__header .navigation .nav__bar .logo a {
+    text-decoration: none;
+    color: black;
+  }
+  .contact__header .navigation .nav__bar .logo a .fa-city {
+    font-size: 1.8rem;
+    color: black;
+  }
+  .contact__header .navigation .nav__bar .logo a span {
+    font-size: 1.5rem;
+    font-family: Roboto Slab;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .contact__header .navigation .nav__bar .logo a b {
+    font-size: 1.5rem;
+    font-family: Ubuntu;
+    color: #4252CE;
+  }
+  .contact__header .navigation .nav__bar .nav a {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 0.8rem;
+    font-family: Ubuntu;
+    color: #737373;
+  }
+  .contact__header .navigation .nav__bar .nav i {
+    font-size: 2rem;
+    color: #4232C2;
+    display: none;
+  }
+  .contact__header .navigation .nav__bar .social i {
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .contact__header .navigation .nav__bar .bars {
+    display: none;
+  }
+  .contact__section .contact__title h2 {
+    font-size: 2.2rem;
+  }
+  .contact__section .contact__title p {
+    font-size: 1rem;
+  }
+  .contact__section .contact__section__content {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    align-items: center;
+  }
+  .contact__section .contact__section__content .media__item {
+    width: 100%;
+  }
+  .contact__section .contact__section__content .media__item .media__content {
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2rem;
+    align-items: center;
     gap: 1rem;
   }
-  .transform .transform__content .transform__img__content .img__item img {
+  .digital__header .navigation {
     width: 100%;
-    border-radius: 20px;
+    padding: 1rem 0;
+    background-color: #fff;
   }
-  .footer .footer__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 3rem;
+  .digital__header .navigation .nav__bar .logo {
+    width: 30%;
   }
-  .copyright .copyright__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    text-align: center;
+  .digital__header .navigation .nav__bar .logo a {
+    text-decoration: none;
+    color: black;
+  }
+  .digital__header .navigation .nav__bar .logo a .fa-city {
+    font-size: 1.8rem;
+    color: black;
+  }
+  .digital__header .navigation .nav__bar .logo a span {
+    font-size: 1.5rem;
+    font-family: Roboto Slab;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .digital__header .navigation .nav__bar .logo a b {
+    font-size: 1.5rem;
+    font-family: Ubuntu;
+    color: #4252CE;
+  }
+  .digital__header .navigation .nav__bar .nav a {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 0.8rem;
+    font-family: Ubuntu;
+    color: #737373;
+  }
+  .digital__header .navigation .nav__bar .nav i {
+    font-size: 2rem;
+    color: #4232C2;
+    display: none;
+  }
+  .digital__header .navigation .nav__bar .social i {
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .digital__header .navigation .nav__bar .bars {
+    display: none;
+  }
+  .digital__section .text__banner .vesti h3 {
+    font-size: 2.2rem;
+    font-family: Ubuntu;
+  }
+  .comment .comment__banner .comment__content .comment__img {
+    width: 18%;
   }
 }/*# sourceMappingURL=responsive.css.map */
